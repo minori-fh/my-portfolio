@@ -2,9 +2,31 @@ $(document).ready(function() {
 
 
 //Variable declarations
+var cubeNumber = "";
 
 //Function declarations
 
+
+//Initial page line animation
+$(".cube").css("height","2px")
+$(".cube").css("width","1px")
+$(".cube").animate({width: "80px"}, 1000)
+
+
+setTimeout(function(){
+    $("#myName-column").text("Hi, my name is Minori.")
+}, 1000)
+
+setTimeout(function(){
+    $("#myName-column").text("")
+}, 3000)
+
+setTimeout(function(){
+    $("#cube-0").animate({height: "300px"}, 700)
+    $("#cube-1").animate({height: "300px"}, 850)
+    $("#cube-2").animate({height: "300px"}, 1000)
+    $("#cube-3").animate({height: "300px"}, 1150)
+}, 3000)
 
 //Animate cube width on mouseover
 $(".cube").on("mouseover",function(){
