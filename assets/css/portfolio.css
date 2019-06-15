@@ -110,3 +110,14 @@ a, a:visited, a:active {
     color: white; 
     font-size: 30px; 
 }
+
+/* My name row styling */
+#my-name-row {
+    text-align: center; 
+}
+
+#myName-column {
+    width: 320px; 
+    font-size: 33px; 
+    height: 50px; 
+}
