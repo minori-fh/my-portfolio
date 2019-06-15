@@ -80,3 +80,22 @@
     width: 80px; 
     height: 300px; 
 }
+
+/* Styling for contact row */
+.contact {
+    flex: initial; 
+    width: 60px; 
+}
+
+#contact-row {
+    justify-content: center; 
+    margin-top: 200px; 
+}
+
+#mail-icon {
+    margin-top: 2px; 
+}
+
+#li-icon, #gh-icon, #mail-icon {
+    opacity: 0.5;
+}
