@@ -48,7 +48,7 @@ $(".cube").on("mouseover",function(){
 $("#cube-1").on("mouseover", function(){
 
     setTimeout(function(){
-        $("#cube-1").html("<a href='aboutMe.html'> ABOUT ME </a>")
+        $("#cube-1").html("<a href='about-me.html'> ABOUT ME </a>")
         $("#cube-1").css("justify-content", "center")
     }, 500)
 
