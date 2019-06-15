@@ -1,0 +1,42 @@
+#intro-page {
+    height: 100vh;
+    width: 100vw; 
+    font-family: 'Oswald', sans-serif;
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+#intro-page {
+    background-color: rgb(238, 238, 238); 
+    color: black; 
+}
+/* CSS properties for flexbox */
+.row {
+    display: flex; 
+    flex-direction: row; 
+    width: 100vw; 
+    max-width: 100%; 
+}
+
+.column {
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
+    max-width: 100%; 
+}
+
+/* CSS properties for navbar */
+
+#MH-logo {
+    margin-top: 40px; 
+    margin-left: 20px; 
+}
+
+#row-nav {
+    height: 15%; 
+}
+
+#column-nav {
+    justify-content: center; /*horizontal alignment*/
+    align-items: center; /*vertical alignment*/
+}
