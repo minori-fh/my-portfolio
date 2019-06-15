@@ -26,7 +26,6 @@
 }
 
 /* CSS properties for navbar */
-
 #MH-logo {
     margin-top: 40px; 
     margin-left: 20px; 
@@ -39,4 +38,45 @@
 #column-nav {
     justify-content: center; /*horizontal alignment*/
     align-items: center; /*vertical alignment*/
+}
+
+/* Cube styling */
+
+#cubes-row {
+    height: 300px;
+    width: 100%;  
+    /* margin-top: 100px;  */
+    justify-content: center; 
+}
+
+#cube-margin-1, #cube-margin-2 {
+    width: 100vh - 150px; 
+}
+
+#cube-0 {
+    background-color: black;
+    flex: initial; 
+    width: 80px; 
+    height: 300px; 
+}
+
+#cube-1 {
+    background-color: rgb(31, 30, 30);
+    flex: initial; 
+    width: 80px; 
+    height: 300px; 
+}
+
+#cube-2 {
+    background-color: rgb(59, 59, 59); 
+    flex: initial;
+    width: 80px; 
+    height: 300px;  
+}
+
+#cube-3 {
+    background-color: rgb(83, 83, 83);
+    flex: initial; 
+    width: 80px; 
+    height: 300px; 
 }
