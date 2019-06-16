@@ -50,24 +50,6 @@
     align-items: center; /*vertical alignment*/
 }
 
-.go-home {
-    margin-top: 10px; 
-    height: 10%;  
-    justify-content: flex-end;
-}
-
-#house {
-    margin-right: 40px; 
-}
-
-#self-description {
-    height: 75%;
-    align-items: center; 
-}
-
-#button-row {
-    height: 15%; 
-}
 /* Cube styling */
 
 #cubes-row {
@@ -189,7 +171,7 @@ a, a:visited, a:active {
 }
 
 #button-row {
-    margin-top: 20px; 
+    height: 15%; 
 }
 
 #how, #where {
@@ -208,6 +190,23 @@ a, a:visited, a:active {
     justify-content: center; 
     vertical-align: middle; 
 }
+
+
+.go-home {
+    margin-top: 10px; 
+    height: 10%;  
+    justify-content: flex-end;
+}
+
+.house {
+    margin-right: 40px; 
+}
+
+#self-description {
+    height: 75%;
+    align-items: center; 
+}
+
 
 /* PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING*/
 #project-header {
