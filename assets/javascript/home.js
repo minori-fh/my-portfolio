@@ -47,10 +47,6 @@ setTimeout(function(){
     $("#cube-1").animate({height: "300px", top: -150, bottom: -200}, 800);
     $("#cube-2").animate({height: "300px", top: -150, bottom: -200}, 1000);
     $("#cube-3").animate({height: "300px", top: -150, bottom: -200}, 1200);
-    // $("#cube-0").animate({height: "300px"}, 700)
-    // $("#cube-1").animate({height: "300px"}, 850)
-    // $("#cube-2").animate({height: "300px"}, 1000)
-    // $("#cube-3").animate({height: "300px"}, 1150)
 }, 4300)
 
 //Animate cube width on mouseover
@@ -67,6 +63,15 @@ $(".cube").on("mouseover",function(){
         $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px"}, 500)
         $("#cube-" + (parseFloat(cubeNumber)+4)).animate({width: "50px"}, 500)
         $("#cube-" + (parseFloat(cubeNumber)-4)).animate({width: "50px"}, 500)
+});
+
+$("#cubez").on("mouseleave", function(){
+    console.log("mouse left!")
+    $("#cube-0").animate({width: "80px"}, 400);
+    $("#cube-1").animate({width: "80px"}, 400);
+    $("#cube-2").animate({width: "80px"}, 400);
+    $("#cube-3").animate({width: "80px"}, 400);
+
 });
 
 //Animate text on cube-1 ABOUT ME

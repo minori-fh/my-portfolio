@@ -103,6 +103,11 @@
     bottom: 0; 
 }
 
+#cubez {
+    flex: initial; 
+    width: 540px; 
+    justify-content: center; 
+}
 /* Styling for contact row */
 .contact {
     flex: initial; 
