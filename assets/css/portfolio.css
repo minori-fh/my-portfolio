@@ -202,3 +202,8 @@ a, a:visited, a:active {
     flex: initial;
     width: 70%; 
 }
+
+#work-categories {
+    text-align: center; 
+    font-size: 20px; 
+}
