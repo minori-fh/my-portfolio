@@ -50,6 +50,24 @@
     align-items: center; /*vertical alignment*/
 }
 
+.go-home {
+    margin-top: 10px; 
+    height: 10%;  
+    justify-content: flex-end;
+}
+
+#house {
+    margin-right: 40px; 
+}
+
+#self-description {
+    height: 75%;
+    align-items: center; 
+}
+
+#button-row {
+    height: 15%; 
+}
 /* Cube styling */
 
 #cubes-row {
