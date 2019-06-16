@@ -140,7 +140,7 @@ a, a:visited, a:active {
 
 #propic-column {
     justify-content: center; 
-    /* background-color: rgb(241, 238, 215);  */
+    background-color: rgb(241, 238, 215); 
     flex: initial; 
     width: 30%; 
 }
@@ -152,4 +152,20 @@ a, a:visited, a:active {
 #description, #propic-column {
     height: 100vh; 
 
+}
+
+#button-row {
+    margin-top: 20px; 
+}
+
+#how, #where {
+    background-color: rgb(250, 187, 70);
+    border: none; 
+    height: 30px; 
+    color: white; 
+    font-size: 15px; 
+}
+
+#where {
+    margin-left: 10px; 
 }
