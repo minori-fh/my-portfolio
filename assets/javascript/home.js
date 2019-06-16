@@ -9,6 +9,9 @@ $("#trivia-links").hide()
 
 //Variable declarations
 var cubeNumber = "";
+var i = 0;
+var txt = "< Hi, my name is Minori >"
+var speed = 70; 
 
 //Function declarations
 
@@ -19,9 +22,17 @@ $(".cube").css("width","1px")
 $(".cube").css("margin-top","150px")
 $(".cube").animate({width: "80px"}, 1000)
 
+function typeWriter(){
+    if (i<txt.length){
+        document.getElementById("myName-column").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter,speed)
+        console.log(i)
+    }
+};
 
 setTimeout(function(){
-    $("#myName-column").text("Hi, my name is Minori.")
+    typeWriter()
     $("#myName-column").css("margin-top", "150px")
     $("#contact-row-index").css("margin-top", "50px")
     $(".cube").css("margin-top","0px")
@@ -29,7 +40,7 @@ setTimeout(function(){
 
 setTimeout(function(){
     $("#myName-column").text("")
-}, 3000)
+}, 4300)
 
 setTimeout(function(){
     $("#cube-0").animate({height: "300px", top: -150, bottom: -200}, 600);
@@ -40,7 +51,7 @@ setTimeout(function(){
     // $("#cube-1").animate({height: "300px"}, 850)
     // $("#cube-2").animate({height: "300px"}, 1000)
     // $("#cube-3").animate({height: "300px"}, 1150)
-}, 3000)
+}, 4300)
 
 //Animate cube width on mouseover
 $(".cube").on("mouseover",function(){
