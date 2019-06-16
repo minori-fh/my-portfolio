@@ -100,8 +100,14 @@ $("#cube-2").on("mouseleave", function(){
 
 //Event handler on click (about me or work page)
 $("#about-me-link, #work-link").on("click", function(){
-    $(".cube").animate({height: "2px"}, 4000)
-    $(".cube").css("margin-top","150px")
+    $("#work-link").hide()
+    $("#about-me-link").hide()
+
+    $("#cube-0").animate({height: "2px", bottom: -150, top: -100}, 500);
+    $("#cube-1").animate({height: "2px", bottom: -150, top: -100}, 500);
+    $("#cube-2").animate({height: "2px", bottom: -150, top: -100}, 500);
+    $("#cube-3").animate({height: "2px", bottom: -150, top: -100}, 500);
+    $(".cube").animate({"margin-top": "100px"}, 500);
 });
 
 }); //END: document ready function
