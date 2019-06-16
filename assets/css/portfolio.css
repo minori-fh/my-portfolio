@@ -216,3 +216,13 @@ a, a:visited, a:active {
 #projects-row2 {
     margin-top: 10px; 
 }
+
+.project {
+    width: 300px; 
+    height: 175px; 
+}
+
+#hangman-links {
+    text-align: center; 
+    width: 100%; 
+}

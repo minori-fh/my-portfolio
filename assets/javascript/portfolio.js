@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+$("#hangman-links").hide()
+
 
 //Variable declarations
 var cubeNumber = "";
@@ -73,6 +75,15 @@ $("#cube-2").on("mouseleave", function(){
     $("#cube-2").html("")
 });
 
+//Event handler: mouseover on project images
+$("#hangman-col").on("mouseover", function(){
+    $("#hangman").attr("src","assets/images/blank.png")
+    $("#hangman-links").show()
+})
 
+$("#hangman-col").on("mouseleave", function(){
+    $("#hangman").attr("src","assets/images/hangman.png")
+    $("#hangman-links").hide()
+})
 
 }); //END: document ready function
