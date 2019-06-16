@@ -151,7 +151,6 @@ a, a:visited, a:active {
 }
 
 #propic {
-    /* margin-left: 30px;  */
     border: solid white 3px; 
     border-radius: 500px; 
 }
@@ -222,7 +221,7 @@ a, a:visited, a:active {
     height: 175px; 
 }
 
-#project-subtitle {
+.project-subtitle {
     text-align: center; 
     width: 100%; 
 }
