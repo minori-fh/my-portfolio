@@ -1,11 +1,7 @@
 $(document).ready(function() {
 
-$("#hangman-links").hide()
-$("#expressflix-links").hide()
-$("#polytopia-links").hide()
-$("#sip-links").hide()
-$("#trivia-links").hide()
-
+$("#about-me-link").hide()
+$("#work-link").hide()
 
 //Variable declarations
 var cubeNumber = "";
@@ -75,34 +71,37 @@ $("#cubez").on("mouseleave", function(){
 });
 
 //Animate text on cube-1 ABOUT ME
-$("#cube-1").on("mouseover", function(){
+$("#cube-1").on("mouseenter", function(){
+    console.log("Hello")
 
     setTimeout(function(){
-        $("#cube-1").html("<a href='about-me.html' id = 'about-me-link'> ABOUT ME </a>")
-        $("#cube-1").css("text-align", "center")
-        $("#about-me-link").css("margin-top", "90px")
+        $("#about-me-link").show()
     }, 500)
 
 });
 
 $("#cube-1").on("mouseleave", function(){
-    $("#cube-1").html("")
+    $("#about-me-link").hide()
 });
 
 
 //Animate text on cube-1 WORK
-$("#cube-2").on("mouseover", function(){
+$("#cube-2").on("mouseenter", function(){
 
     setTimeout(function(){
-        $("#cube-2").html("<a href='work.html' id = 'work-link'> WORK </a>")
-        $("#cube-2").css("text-align", "center")
-        $("#work-link").css("margin-top", "90px")
+        $("#work-link").show()
     }, 500)
 
 });
 
 $("#cube-2").on("mouseleave", function(){
-    $("#cube-2").html("")
+    $("#work-link").hide()
+});
+
+//Event handler on click (about me or work page)
+$("#about-me-link, #work-link").on("click", function(){
+    $(".cube").animate({height: "2px"}, 4000)
+    $(".cube").css("margin-top","150px")
 });
 
 }); //END: document ready function

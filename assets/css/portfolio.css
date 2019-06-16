@@ -108,6 +108,19 @@
     width: 540px; 
     justify-content: center; 
 }
+
+#about-me-link {
+    color: white;
+    margin-top: 90px; 
+    text-align: center; 
+}
+  
+#work-link {
+    color: white;
+    margin-top: 90px; 
+    text-align: center; 
+}
+
 /* Styling for contact row */
 .contact {
     flex: initial; 
