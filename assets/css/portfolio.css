@@ -10,6 +10,12 @@
     background-color: rgb(238, 238, 238); 
     color: black; 
 }
+
+#about-me {
+    background-color: white; 
+    color: black; 
+}
+/* INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING */
 /* CSS properties for flexbox */
 .row {
     display: flex; 
@@ -120,4 +126,30 @@ a, a:visited, a:active {
     width: 320px; 
     font-size: 33px; 
     height: 50px; 
+}
+
+/* PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING*/
+#description {
+    font-size: 40px; 
+    justify-content: center; 
+    background-color: rgb(252, 244, 180); 
+    flex: initial;
+    width: 70%; 
+    padding-left: 30px; 
+}
+
+#propic-column {
+    justify-content: center; 
+    /* background-color: rgb(241, 238, 215);  */
+    flex: initial; 
+    width: 30%; 
+}
+
+#propic {
+    margin-left: 70px; 
+}
+
+#description, #propic-column {
+    height: 100vh; 
+
 }
