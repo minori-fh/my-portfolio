@@ -1,4 +1,4 @@
-#intro-page, #about-me {
+#intro-page, #about-me, #work {
     height: 100vh;
     width: 100vw; 
     font-family: 'Oswald', sans-serif;
@@ -14,6 +14,10 @@
 #about-me {
     background-color: white; 
     color: black; 
+}
+
+#work {
+    background-color: rgb(205, 226, 251); 
 }
 /* INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING */
 /* CSS properties for flexbox */
@@ -140,20 +144,25 @@ a, a:visited, a:active {
 
 #propic-column {
     justify-content: center; 
-    background-color: rgb(241, 238, 215); 
+    align-items: center;
+    /* background-color: rgb(241, 238, 215);  */
     flex: initial; 
     width: 30%; 
 }
 
 #propic {
-    margin-left: 30px; 
-    border: solid black 5px; 
+    /* margin-left: 30px;  */
+    border: solid white 3px; 
     border-radius: 500px; 
 }
 
 #description, #propic-column {
     height: 100vh; 
 
+}
+
+#about-header {
+    font-size: 70px; 
 }
 
 #button-row {
@@ -170,4 +179,26 @@ a, a:visited, a:active {
 
 #where {
     margin-left: 10px; 
+}
+
+/* PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING*/
+#project-header {
+    font-size: 70px; 
+}
+
+#projects-column, #description-work{
+    height: 100vh; 
+}
+
+#projects-column{
+    justify-content: center; 
+    align-items: center;
+    flex: initial;
+    width: 30%;
+    background-color: white; 
+}
+
+#description-work { 
+    flex: initial;
+    width: 70%; 
 }
