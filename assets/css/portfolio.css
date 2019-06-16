@@ -97,9 +97,15 @@
     width: 60px; 
 }
 
-#contact-row {
+#contact-row-index {
     justify-content: center; 
     margin-top: 200px; 
+}
+
+#contact-row-work, #contact-row-about {
+    justify-content: center; 
+    vertical-align: middle; 
+    margin-top: 100px; 
 }
 
 #mail-icon {
@@ -180,9 +186,19 @@ a, a:visited, a:active {
     margin-left: 10px; 
 }
 
+#about-header-row, #propic-row {
+    justify-content: center; 
+    vertical-align: middle; 
+}
+
 /* PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING*/
 #project-header {
     font-size: 70px; 
+}
+
+#project-header-row {
+    justify-content: center; 
+    vertical-align: middle; 
 }
 
 #projects-column, #description-work{
