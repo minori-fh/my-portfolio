@@ -68,6 +68,9 @@
     flex: initial; 
     width: 80px; 
     height: 300px; 
+    position: relative;
+    top: 0;
+    bottom: 0; 
 }
 
 #cube-1 {
@@ -75,13 +78,19 @@
     flex: initial; 
     width: 80px; 
     height: 300px; 
+    position: relative;
+    top: 0;
+    bottom: 0; 
 }
 
 #cube-2 {
     background-color: rgb(59, 59, 59); 
     flex: initial;
     width: 80px; 
-    height: 300px;  
+    height: 300px;
+    position: relative;
+    top: 0;
+    bottom: 0;   
 }
 
 #cube-3 {
@@ -89,6 +98,9 @@
     flex: initial; 
     width: 80px; 
     height: 300px; 
+    position: relative;
+    top: 0;
+    bottom: 0; 
 }
 
 /* Styling for contact row */
@@ -238,7 +250,7 @@ a, a:visited, a:active {
 #work-categories {
     text-align: center; 
     font-size: 20px; 
-    margin-top: 100px; 
+    margin-top: 70px; 
 }
 
 #projects-row1 {
