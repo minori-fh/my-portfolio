@@ -146,7 +146,9 @@ a, a:visited, a:active {
 }
 
 #propic {
-    margin-left: 70px; 
+    margin-left: 30px; 
+    border: solid black 7px; 
+    border-radius: 500px; 
 }
 
 #description, #propic-column {
