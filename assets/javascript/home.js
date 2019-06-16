@@ -78,8 +78,9 @@ $("#cubez").on("mouseleave", function(){
 $("#cube-1").on("mouseover", function(){
 
     setTimeout(function(){
-        $("#cube-1").html("<a href='about-me.html'> ABOUT ME </a>")
-        $("#cube-1").css("justify-content", "center")
+        $("#cube-1").html("<a href='about-me.html' id = 'about-me-link'> ABOUT ME </a>")
+        $("#cube-1").css("text-align", "center")
+        $("#about-me-link").css("margin-top", "90px")
     }, 500)
 
 });
@@ -93,8 +94,9 @@ $("#cube-1").on("mouseleave", function(){
 $("#cube-2").on("mouseover", function(){
 
     setTimeout(function(){
-        $("#cube-2").html("<a href='work.html'> WORK </a>")
-        $("#cube-2").css("justify-content", "center")
+        $("#cube-2").html("<a href='work.html' id = 'work-link'> WORK </a>")
+        $("#cube-2").css("text-align", "center")
+        $("#work-link").css("margin-top", "90px")
     }, 500)
 
 });
