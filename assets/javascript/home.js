@@ -9,6 +9,7 @@ var i = 0;
 var txt = "< Hi, my name is Minori >"
 var speed = 70; 
 var newPage = 0; 
+var finishLoad = 0;
 
 //Function declarations
 
@@ -44,6 +45,7 @@ setTimeout(function(){
     $("#cube-1").animate({height: "300px", top: -150, bottom: -200}, 800);
     $("#cube-2").animate({height: "300px", top: -150, bottom: -200}, 1000);
     $("#cube-3").animate({height: "300px", top: -150, bottom: -200}, 1200);
+    finishLoad = 1;
 }, 4300)
 
 //Animate cube width on mouseover
@@ -51,8 +53,9 @@ $(".cube").on("mouseover",function(){
     cubeNumber = $(this).attr("cube-value")
     console.log(cubeNumber)
     console.log(newPage)
+    console.log(finishLoad)
 
-    if (newPage != 1){
+    if (newPage != 1 && finishLoad != 0){
         $("#cube-" + cubeNumber).animate({height: "350px", top: -175, bottom: -200}, 0);
         $("#cube-" + cubeNumber).animate({width: "350px", top: -175, bottom: -200}, 0);
     
@@ -78,7 +81,7 @@ $("#cubez").on("mouseleave", function(){
     $("#about-me-link").hide()
     $("#work-link").hide()
 
-    if (newPage != 1){
+    if (newPage != 1 && finishLoad != 0){
         $("#cube-0").animate({top: -150, bottom: -200}, 0);
         $("#cube-1").animate({top: -150, bottom: -200}, 0);
         $("#cube-2").animate({top: -150, bottom: -200}, 0);
@@ -94,11 +97,12 @@ $("#cubez").on("mouseleave", function(){
 
 //Animate text on cube-1 ABOUT ME
 $("#cube-1").on("mouseenter", function(){
-    console.log("Hello")
 
-    setTimeout(function(){
-        $("#about-me-link").show()
-    }, 500)
+    if (finishLoad != 0){
+        setTimeout(function(){
+            $("#about-me-link").show()
+        }, 500)
+    }
 
 });
 
@@ -110,9 +114,11 @@ $("#cube-1").on("mouseleave", function(){
 //Animate text on cube-1 WORK
 $("#cube-2").on("mouseenter", function(){
 
-    setTimeout(function(){
-        $("#work-link").show()
-    }, 500)
+    if (finishLoad != 0){
+        setTimeout(function(){
+            $("#work-link").show()
+        }, 500)
+    }
 
 });
 
