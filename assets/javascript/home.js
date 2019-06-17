@@ -75,6 +75,8 @@ $(".cube").on("mouseover",function(){
 $("#cubez").on("mouseleave", function(){
     console.log("mouse left!")
     console.log(newPage)
+    $("#about-me-link").hide()
+    $("#work-link").hide()
 
     if (newPage != 1){
         $("#cube-0").animate({top: -150, bottom: -200}, 400);

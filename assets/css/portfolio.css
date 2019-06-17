@@ -293,3 +293,12 @@ a, a:visited, a:active {
     text-align: center; 
     width: 100%; 
 }
+
+#button-row2 {
+    justify-content: flex-end; 
+}
+
+#home2 {
+    margin-left: 20px; 
+    margin-top: 20px; 
+}
