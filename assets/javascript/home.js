@@ -4,6 +4,8 @@ $("#about-me-link").hide()
 $("#work-link").hide()
 $("#scroll-arrow1").hide()
 $("#scroll-arrow2").hide()
+$("#background-image1").hide()
+$("#background-image2").hide()
 
 //Variable declarations
 var cubeNumber = "";
@@ -83,11 +85,16 @@ $("#cube-1").on("mouseover",function(){
         $("#cube-0").css({"backgroundColor" : "#0101c5"});
 
         $("#cube-1").css({"backgroundColor" : "#0000ff"});
+        $("#background-image1").show()
 
         $("#cube-2").css({"backgroundColor" : "#5a81ff"});
         $("#cube-3").css({"backgroundColor" : "#7a9dfb"});
     }
 });
+
+$("#cube-1").on("mouseleave",function(){
+    $("#about-me-link").hide()
+})
 
 //Animate cube width on mouseover
 $("#cube-2").on("mouseover",function(){
@@ -98,20 +105,38 @@ $("#cube-2").on("mouseover",function(){
     if (newPage != 1 && finishLoad != 0){
         $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : "0.05s ease-out"},{queue: false});
 
-        $("#cube-0").css({"backgroundColor" : "#ffff00"},{queue: false});
-        $("#cube-1").css({"backgroundColor" : "#ffff73"},{queue: false});
+        $("#cube-0").css({"backgroundColor" : "#5f025f"},{queue: false});
+        $("#cube-1").css({"backgroundColor" : "#a31ea3"},{queue: false});
 
-        $("#cube-2").css({"backgroundColor" : "#ffffa1"},{queue: false});
+        $("#cube-2").css({"backgroundColor" : "#f869f8"},{queue: false});
+        $("#background-image2").show()
 
-        $("#cube-3").css({"backgroundColor" : "#fcfccd"},{queue: false});
+        $("#cube-3").css({"backgroundColor" : "#e995e9"},{queue: false});
     }
 });
+
+$("#cube-2").on("mouseleave",function(){
+    $("#work-link").hide()
+})
+
+$("#cube-0").on("mouseleave",function(){
+    $("#scroll-arrow1").hide()
+})
+
+$("#cube-3").on("mouseleave",function(){
+    $("#scroll-arrow2").hide()
+})
+
 
 $("#cubez").on("mouseleave", function(){
     console.log("mouse left!")
     console.log(newPage)
     $("#about-me-link").hide()
     $("#work-link").hide()
+    $("#background-image1").hide()
+    $("#background-image2").hide()
+    $("#scroll-arrow1").hide()
+    $("#scroll-arrow2").hide()
 
     if (newPage != 1 && finishLoad != 0){
 

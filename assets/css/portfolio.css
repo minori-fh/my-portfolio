@@ -203,7 +203,13 @@ a, a:visited, a:active {
         transform: rotateY(360deg);
     }
   }
-  
+
+#background-image1, #background-image2 {
+    opacity: 0.4;
+    position: absolute; 
+    width: 100%; 
+    height: 100%
+}
 
 /* PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING*/
 #description {
