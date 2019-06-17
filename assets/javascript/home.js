@@ -91,13 +91,11 @@ $("#cubez").on("mouseleave", function(){
 
 //Animate text on cube-1 ABOUT ME
 $("#cube-1").on("mouseenter", function(){
-
     if (finishLoad != 0){
         setTimeout(function(){
             $("#about-me-link").show()
         }, 500)
     }
-
 });
 
 $("#cube-1").on("mouseleave", function(){
@@ -107,13 +105,11 @@ $("#cube-1").on("mouseleave", function(){
 
 //Animate text on cube-1 WORK
 $("#cube-2").on("mouseenter", function(){
-
     if (finishLoad != 0){
         setTimeout(function(){
             $("#work-link").show()
         }, 500)
     }
-
 });
 
 $("#cube-2").on("mouseleave", function(){
@@ -126,16 +122,15 @@ $("#about-me-link").on("click", function(){
     $("#about-me-link").empty()
     newPage = 1; 
 
-    $("#cube-0").animate({height: "2px", bottom: -150, top: -100}, 500);
-    $("#cube-1").animate({height: "2px", bottom: -150, top: -100}, 500);
-    $("#cube-2").animate({height: "2px", bottom: -150, top: -100}, 500);
-    $("#cube-3").animate({height: "2px", bottom: -150, top: -100}, 500);
-    $(".cube").animate({"margin-top": "100px"}, 500);
+    $(".cube").animate({"margin-top": "200px"}, {duration: 400, queue: false});
+    $("#cube-0").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
+    $("#cube-1").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
+    $("#cube-2").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
+    $("#cube-3").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
 
     setTimeout(function(){
         window.location.href = "about-me.html"
     }, 3000)
-
 });
 
 //Event handler on click (about me or work page)
@@ -144,21 +139,15 @@ $("#work-link").on("click", function(){
     $("#work-link").empty()
     newPage = 1; 
 
-    $("#cube-0").animate({height: "2px", bottom: -150, top: -100}, 500);
-    $("#cube-1").animate({height: "2px", bottom: -150, top: -100}, 500);
-    $("#cube-2").animate({height: "2px", bottom: -150, top: -100}, 500);
-    $("#cube-3").animate({height: "2px", bottom: -150, top: -100}, 500);
-
-    $("#cube-0").animate({width: "80px", bottom: -150, top: -100}, 500);
-    $("#cube-1").animate({width: "80px", bottom: -150, top: -100}, 500);
-    $("#cube-2").animate({width: "80px", bottom: -150, top: -100}, 500);
-    $("#cube-3").animate({width: "80px", bottom: -150, top: -100}, 500);
-    $(".cube").animate({"margin-top": "100px"}, 500);
+    $(".cube").animate({"margin-top": "200px"}, {duration: 400, queue: false});
+    $("#cube-0").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
+    $("#cube-1").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
+    $("#cube-2").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
+    $("#cube-3").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
 
     setTimeout(function(){
         window.location.href = "work.html"
     }, 3000)
-
 });
 
 }); //END: document ready function
