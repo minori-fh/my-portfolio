@@ -53,21 +53,21 @@ $(".cube").on("mouseover",function(){
     console.log(newPage)
 
     if (newPage != 1){
-        $("#cube-" + cubeNumber).animate({height: "350px", top: -175, bottom: -200}, 200);
-        $("#cube-" + cubeNumber).animate({width: "350px", top: -175, bottom: -200}, 200);
+        $("#cube-" + cubeNumber).animate({height: "350px", top: -175, bottom: -200}, 0);
+        $("#cube-" + cubeNumber).animate({width: "350px", top: -175, bottom: -200}, 0);
     
-        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({height: "325px", top: -160, bottom: -200}, 200);
-        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({height: "325px", top: -160, bottom: -200}, 200);
-        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({width: "80px"}, 200)
-        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({width: "80px"}, 200)
+        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({height: "325px", top: -160, bottom: -200}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({height: "325px", top: -160, bottom: -200}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({width: "80px"}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({width: "80px"}, 0)
     
-        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({height: "315px", top: -155, bottom: -200}, 200);
-        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({height: "315px", top: -155, bottom: -200}, 200);
-        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({width: "70px"}, 200)
-        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({width: "70px"}, 200)
+        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({height: "315px", top: -155, bottom: -200}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({height: "315px", top: -155, bottom: -200}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({width: "70px"}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({width: "70px"}, 0)
     
-        $("#cube-" + (parseFloat(cubeNumber)+3)).animate({width: "60px"}, 200)
-        $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px"}, 200)
+        $("#cube-" + (parseFloat(cubeNumber)+3)).animate({width: "60px"}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px"}, 0)
     }
 
 });
@@ -148,6 +148,11 @@ $("#work-link").on("click", function(){
     $("#cube-1").animate({height: "2px", bottom: -150, top: -100}, 500);
     $("#cube-2").animate({height: "2px", bottom: -150, top: -100}, 500);
     $("#cube-3").animate({height: "2px", bottom: -150, top: -100}, 500);
+
+    $("#cube-0").animate({width: "80px", bottom: -150, top: -100}, 500);
+    $("#cube-1").animate({width: "80px", bottom: -150, top: -100}, 500);
+    $("#cube-2").animate({width: "80px", bottom: -150, top: -100}, 500);
+    $("#cube-3").animate({width: "80px", bottom: -150, top: -100}, 500);
     $(".cube").animate({"margin-top": "100px"}, 500);
 
     setTimeout(function(){
