@@ -79,15 +79,15 @@ $("#cubez").on("mouseleave", function(){
     $("#work-link").hide()
 
     if (newPage != 1){
-        $("#cube-0").animate({top: -150, bottom: -200}, 400);
-        $("#cube-1").animate({top: -150, bottom: -200}, 400);
-        $("#cube-2").animate({top: -150, bottom: -200}, 400);
-        $("#cube-3").animate({top: -150, bottom: -200}, 400);
+        $("#cube-0").animate({top: -150, bottom: -200}, 0);
+        $("#cube-1").animate({top: -150, bottom: -200}, 0);
+        $("#cube-2").animate({top: -150, bottom: -200}, 0);
+        $("#cube-3").animate({top: -150, bottom: -200}, 0);
     
-        $("#cube-0").animate({width: "80px", height: "300px"}, 400);
-        $("#cube-1").animate({width: "80px", height: "300px"}, 400);
-        $("#cube-2").animate({width: "80px", height: "300px"}, 400);
-        $("#cube-3").animate({width: "80px", height: "300px"}, 400);
+        $("#cube-0").animate({width: "80px", height: "300px"}, 0);
+        $("#cube-1").animate({width: "80px", height: "300px"}, 0);
+        $("#cube-2").animate({width: "80px", height: "300px"}, 0);
+        $("#cube-3").animate({width: "80px", height: "300px"}, 0);
     }
 
 });
