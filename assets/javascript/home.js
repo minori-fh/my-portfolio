@@ -56,23 +56,17 @@ $(".cube").on("mouseover",function(){
     console.log(finishLoad)
 
     if (newPage != 1 && finishLoad != 0){
-        $("#cube-" + cubeNumber).animate({height: "350px", top: -175, bottom: -200}, 0);
-        $("#cube-" + cubeNumber).animate({width: "350px", top: -175, bottom: -200}, 0);
+        $("#cube-" + cubeNumber).animate({height: "350px", width: "350px", top: -175, bottom: -200}, 300);
     
-        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({height: "325px", top: -160, bottom: -200}, 0);
-        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({height: "325px", top: -160, bottom: -200}, 0);
-        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({width: "80px"}, 0)
-        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({width: "80px"}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({height: "325px", width: "80px", top: -160, bottom: -200}, 300);
+        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({height: "325px", width: "80px", top: -160, bottom: -200}, 300);
     
-        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({height: "315px", top: -155, bottom: -200}, 0);
-        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({height: "315px", top: -155, bottom: -200}, 0);
-        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({width: "70px"}, 0)
-        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({width: "70px"}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({height: "315px", width: "70px", top: -155, bottom: -200}, 300);
+        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({height: "315px", width: "70px", top: -155, bottom: -200}, 300);
     
-        $("#cube-" + (parseFloat(cubeNumber)+3)).animate({width: "60px"}, 0)
-        $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px"}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)+3)).animate({width: "60px"}, 300)
+        $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px"}, 300)
     }
-
 });
 
 $("#cubez").on("mouseleave", function(){
