@@ -69,6 +69,47 @@ $(".cube").on("mouseover",function(){
     }
 });
 
+//Animate cube width on mouseover
+$("#cube-1").on("mouseover",function(){
+    console.log(cubeNumber)
+    console.log(newPage)
+    console.log(finishLoad)
+
+    if (newPage != 1 && finishLoad != 0){
+        $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : "0.05s ease-out"});
+
+        $("#cube-0").css({"backgroundColor" : "#0101c5"});
+
+        $("#cube-1").css({"backgroundColor" : "#0000ff"});
+
+        $("#cube-2").css({"backgroundColor" : "#5a81ff"});
+        $("#cube-3").css({"backgroundColor" : "#7a9dfb"});
+
+        // $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
+
+    }
+});
+
+//Animate cube width on mouseover
+$("#cube-2").on("mouseover",function(){
+    console.log(cubeNumber)
+    console.log(newPage)
+    console.log(finishLoad)
+
+    if (newPage != 1 && finishLoad != 0){
+        $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : "0.05s ease-out"},{queue: false});
+
+        $("#cube-0").css({"backgroundColor" : "#ffff00"},{queue: false});
+        $("#cube-1").css({"backgroundColor" : "#ffff73"},{queue: false});
+
+        $("#cube-2").css({"backgroundColor" : "#ffffa1"},{queue: false});
+
+        $("#cube-3").css({"backgroundColor" : "#fcfccd"},{queue: false});
+
+        // $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
+    }
+});
+
 $("#cubez").on("mouseleave", function(){
     console.log("mouse left!")
     console.log(newPage)
@@ -76,10 +117,21 @@ $("#cubez").on("mouseleave", function(){
     $("#work-link").hide()
 
     if (newPage != 1 && finishLoad != 0){
-        $("#cube-0").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 400);
-        $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 400);
-        $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 400);
-        $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 400);
+
+        $("#cube-0").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 300);
+        $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 300);
+        $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 300);
+        $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 300);
+
+        $("#cube-0").css({"backgroundColor" : "#000000"});
+        $("#cube-1").css({"backgroundColor" : "#1f1e1e"});
+        $("#cube-2").css({"backgroundColor" : "#3b3b3b"});
+        $("#cube-3").css({"backgroundColor" : "#535353"});
+
+        // $("#cube-0").css({"transition" : ""});
+        // $("#cube-1").css({"transition" : ""});
+        // $("#cube-2").css({"transition" : ""});
+        // $("#cube-3").css({"transition" : ""});
     }
 
 });

@@ -64,43 +64,47 @@
 }
 
 #cube-0 {
-    background-color: black;
+    background-color: #000000;
     flex: initial; 
     width: 80px; 
     height: 300px; 
     position: relative;
     top: 0;
     bottom: 0; 
+    /* transition: 1s ease-in-out; */
 }
 
 #cube-1 {
-    background-color: rgb(31, 30, 30);
+    background-color: #1f1e1e;
     flex: initial; 
     width: 80px; 
     height: 300px; 
     position: relative;
     top: 0;
     bottom: 0; 
+    /* transition: 1s ease-in-out; */
 }
 
 #cube-2 {
-    background-color: rgb(59, 59, 59); 
+    background-color: #3b3b3b; 
     flex: initial;
     width: 80px; 
     height: 300px;
     position: relative;
     top: 0;
-    bottom: 0;   
+    bottom: 0; 
+    /* transition: 1s ease-in-out;   */
 }
 
 #cube-3 {
-    background-color: rgb(83, 83, 83);
+    background-color: #535353;
     flex: initial; 
     width: 80px; 
     height: 300px; 
     position: relative;
     top: 0;
     bottom: 0; 
+    /* transition: 1s ease-in-out; */
 }
 
 #cubez {
