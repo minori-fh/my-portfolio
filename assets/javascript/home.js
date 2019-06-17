@@ -293,7 +293,15 @@ $("#cube-3").on("mouseleave", function(){
 $("#about-me-link").on("click", function(){
     $("#work-link").empty()
     $("#about-me-link").empty()
+    $("#scroll-arrow1, #scroll-arrow2").empty()
+   
     newPage = 1; 
+
+    $("#cube-0").css({"backgroundColor" : "#000000"});
+    $("#cube-1").css({"backgroundColor" : "#1f1e1e"});
+    $("#cube-2").css({"backgroundColor" : "#3b3b3b"});
+    $("#cube-3").css({"backgroundColor" : "#535353"});
+    $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
 
     $(".cube").animate({"margin-top": "200px"}, {duration: 400, queue: false});
     $("#cube-0").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
@@ -310,7 +318,15 @@ $("#about-me-link").on("click", function(){
 $("#work-link").on("click", function(){
     $("#about-me-link").empty()
     $("#work-link").empty()
+    $("#scroll-arrow1, #scroll-arrow2").empty()
     newPage = 1; 
+
+
+    $("#cube-0").css({"backgroundColor" : "#000000"});
+    $("#cube-1").css({"backgroundColor" : "#1f1e1e"});
+    $("#cube-2").css({"backgroundColor" : "#3b3b3b"});
+    $("#cube-3").css({"backgroundColor" : "#535353"});
+    $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
 
     $(".cube").animate({"margin-top": "200px"}, {duration: 400, queue: false});
     $("#cube-0").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
