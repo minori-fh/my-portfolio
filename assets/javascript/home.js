@@ -91,6 +91,33 @@ $("#cube-1").on("mouseenter", function(){
             $("#about-me-link").show()
         }, 500)
     }
+    
+    // Wrap every letter in a span
+    $('#about-me-link').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+    
+    anime.timeline({loop: true})
+        .add({
+        targets: '#about-me-link .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: function(el, i) {
+            return 500 + 30 * i;
+        }
+        }).add({
+        targets: '#about-me-link .letter',
+        translateX: [0,-30],
+        opacity: [1,0],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: function(el, i) {
+            return 100 + 30 * i;
+        }
+        });
 });
 
 $("#cube-1").on("mouseleave", function(){
@@ -100,11 +127,38 @@ $("#cube-1").on("mouseleave", function(){
 
 //Animate text on cube-1 WORK
 $("#cube-2").on("mouseenter", function(){
+
     if (finishLoad != 0){
         setTimeout(function(){
             $("#work-link").show()
         }, 500)
     }
+
+    $('#work-link').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+    
+    anime.timeline({loop: true})
+        .add({
+        targets: '#work-link .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: function(el, i) {
+            return 500 + 30 * i;
+        }
+        }).add({
+        targets: '#work-link .letter',
+        translateX: [0,-30],
+        opacity: [1,0],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: function(el, i) {
+            return 100 + 30 * i;
+        }
+        });
 });
 
 $("#cube-2").on("mouseleave", function(){
