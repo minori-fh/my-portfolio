@@ -115,15 +115,21 @@
 
 #about-me-link {
     color: white;
-    margin-top: 90px; 
+    margin-top: 100px; 
     text-align: center; 
     font-family: 'Josefin Sans', sans-serif;
 }
   
 #work-link {
     color: white;
-    margin-top: 90px; 
+    margin-top: 100px; 
     text-align: center; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#scroll-arrow1, #scroll-arrow2 {
+    text-align: center; 
+    margin-top: 150px; 
     font-family: 'Josefin Sans', sans-serif;
 }
 

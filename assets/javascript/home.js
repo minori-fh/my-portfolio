@@ -2,6 +2,8 @@ $(document).ready(function() {
 
 $("#about-me-link").hide()
 $("#work-link").hide()
+$("#scroll-arrow1").hide()
+$("#scroll-arrow2").hide()
 
 //Variable declarations
 var cubeNumber = "";
@@ -84,9 +86,6 @@ $("#cube-1").on("mouseover",function(){
 
         $("#cube-2").css({"backgroundColor" : "#5a81ff"});
         $("#cube-3").css({"backgroundColor" : "#7a9dfb"});
-
-        // $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
-
     }
 });
 
@@ -105,8 +104,6 @@ $("#cube-2").on("mouseover",function(){
         $("#cube-2").css({"backgroundColor" : "#ffffa1"},{queue: false});
 
         $("#cube-3").css({"backgroundColor" : "#fcfccd"},{queue: false});
-
-        // $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
     }
 });
 
@@ -127,13 +124,48 @@ $("#cubez").on("mouseleave", function(){
         $("#cube-1").css({"backgroundColor" : "#1f1e1e"});
         $("#cube-2").css({"backgroundColor" : "#3b3b3b"});
         $("#cube-3").css({"backgroundColor" : "#535353"});
+    }
+});
 
-        // $("#cube-0").css({"transition" : ""});
-        // $("#cube-1").css({"transition" : ""});
-        // $("#cube-2").css({"transition" : ""});
-        // $("#cube-3").css({"transition" : ""});
+
+//Animate text on cube-0 scroll arrow
+$("#cube-0").on("mouseenter", function(){
+    if (finishLoad != 0){
+        setTimeout(function(){
+            $("#scroll-arrow1").show()
+            $("#scroll-arrow1").css({"color" : "grey"})
+        }, 500)
     }
 
+    $('#scroll-arrow1').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+    
+    anime.timeline({loop: true})
+        .add({
+        targets: '#scroll-arrow1 .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: function(el, i) {
+            return 500 + 30 * i;
+        }
+        }).add({
+        targets: '#scroll-arrow1 .letter',
+        translateX: [0,-30],
+        opacity: [1,0],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: function(el, i) {
+            return 100 + 30 * i;
+        }
+        });
+});
+
+$("#cube-0").on("mouseleave", function(){
+    $("#scroll-arrow1").hide()
 });
 
 //Animate text on cube-1 ABOUT ME
@@ -177,7 +209,7 @@ $("#cube-1").on("mouseleave", function(){
 });
 
 
-//Animate text on cube-1 WORK
+//Animate text on cube-2 WORK
 $("#cube-2").on("mouseenter", function(){
 
     if (finishLoad != 0){
@@ -215,6 +247,46 @@ $("#cube-2").on("mouseenter", function(){
 
 $("#cube-2").on("mouseleave", function(){
     $("#work-link").hide()
+});
+
+//Animate text on cube-3 scroll arrow
+$("#cube-3").on("mouseenter", function(){
+    if (finishLoad != 0){
+        setTimeout(function(){
+            $("#scroll-arrow2").show()
+            $("#scroll-arrow2").css({"color" : "grey"})
+        }, 500)
+    }
+
+    $('#scroll-arrow2').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+    
+    anime.timeline({loop: true})
+        .add({
+        targets: '#scroll-arrow2 .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: function(el, i) {
+            return 500 + 30 * i;
+        }
+        }).add({
+        targets: '#scroll-arrow2 .letter',
+        translateX: [0,-30],
+        opacity: [1,0],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: function(el, i) {
+            return 100 + 30 * i;
+        }
+        });
+});
+
+$("#cube-3").on("mouseleave", function(){
+    $("#scroll-arrow2").hide()
 });
 
 //Event handler on click (about me or work page)
