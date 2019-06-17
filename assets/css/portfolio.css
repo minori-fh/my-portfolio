@@ -201,7 +201,8 @@ a, a:visited, a:active {
 }
 
 #button-row {
-    height: 15%; 
+    margin-top: 0px; 
+    height: 35%; 
 }
 
 #how, #where {
@@ -221,20 +222,24 @@ a, a:visited, a:active {
     vertical-align: middle; 
 }
 
-
-.go-home {
-    margin-top: 10px; 
-    height: 10%;  
-    justify-content: flex-end;
-}
-
 .house {
     margin-right: 40px; 
 }
 
 #self-description {
-    height: 75%;
-    align-items: center; 
+    height: 55%;
+    align-items: flex-end; 
+    padding-bottom: 25px; 
+}
+
+#whereIcomefrom-button, #home-button1 {
+    font-size: 15px; 
+    color: grey; 
+}
+
+#button-description {
+    height: 10%; 
+
 }
 
 
