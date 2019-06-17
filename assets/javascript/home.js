@@ -6,7 +6,7 @@ $("#work-link").hide()
 //Variable declarations
 var cubeNumber = "";
 var i = 0;
-var txt = "< Hi, my name is Minori >"
+var txt = "< Hi, my name is Minori />"
 var speed = 70; 
 var newPage = 0; 
 var finishLoad = 0;
@@ -91,7 +91,7 @@ $("#cube-1").on("mouseenter", function(){
             $("#about-me-link").show()
         }, 500)
     }
-    
+
     // Wrap every letter in a span
     $('#about-me-link').each(function(){
         $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
