@@ -291,7 +291,16 @@ a, a:visited, a:active {
 
 #button-description {
     height: 10%; 
+}
 
+#scroll-row1, #scroll-row2 {
+    justify-content: center; 
+    opacity: 0.7; 
+}
+
+#scroll-row2 {
+    margin-bottom: 5px; 
+    height: 10%; 
 }
 
 
@@ -327,14 +336,15 @@ a, a:visited, a:active {
     text-align: center; 
     font-size: 20px; 
     margin-top: 70px; 
+    height: 20%; 
 }
 
 #projects-row1 {
-    margin-top: 100px; 
+    height: 30%;
 }
 
 #projects-row2 {
-    margin-top: 10px; 
+    height: 30%; 
 }
 
 .project {
@@ -348,7 +358,8 @@ a, a:visited, a:active {
 }
 
 #button-row2 {
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    height: 10%; 
 }
 
 #home2 {
