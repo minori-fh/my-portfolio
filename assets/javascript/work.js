@@ -5,6 +5,7 @@ $("#expressflix-links").hide()
 $("#polytopia-links").hide()
 $("#sip-links").hide()
 $("#trivia-links").hide()
+$("#work2").hide();
 
 //Event handler: mouseover on project images
 $("#hangman-col").on("mouseover", function(){
@@ -56,6 +57,14 @@ $("#trivia-col").on("mouseleave", function(){
     $("#trivia").attr("src","assets/images/trivia.png")
     $("#trivia-links").hide()
 })
+
+$("#scroll-down2").on("click", function(){
+    $("#work2").show();
+    
+    $('html,body').animate({
+        scrollTop: $("#work2").offset().top},
+        800);
+});
 
 
 
