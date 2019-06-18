@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-$("#about-me2").hide();
-
 $("#home1, #whereIComeFrom").on("mouseover", function(){
     $(this).addClass("rotate-vert-center")
 });
@@ -11,7 +9,6 @@ $("#home1, #whereIComeFrom").on("mouseleave", function(){
 });
 
 $("#scroll-down1").on("click", function(){
-    $("#about-me2").show();
     
     $('html,body').animate({
         scrollTop: $("#about-me2").offset().top},

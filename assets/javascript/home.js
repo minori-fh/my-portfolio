@@ -6,6 +6,7 @@ $("#scroll-arrow1").hide()
 $("#scroll-arrow2").hide()
 $("#background-image1").hide()
 $("#background-image2").hide()
+$("#chat1").hide()
 
 //Variable declarations
 var cubeNumber = "";
@@ -346,6 +347,11 @@ $("#work-link").on("click", function(){
     setTimeout(function(){
         window.location.href = "work.html"
     }, 2000)
+});
+
+//Event handler for when user clicks on mail icon
+$(".mail-icon").on("click", function(){
+    $("#chat1").show()
 });
 
 }); //END: document ready function

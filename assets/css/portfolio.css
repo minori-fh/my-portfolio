@@ -160,6 +160,10 @@
     opacity: 0.5;
 }
 
+#chat1, #chat2 {
+    justify-content: center; 
+}
+
 /* Styling for links */
 a, a:visited, a:active {
     color: inherit;
