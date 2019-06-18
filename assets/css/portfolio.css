@@ -318,6 +318,7 @@ a, a:visited, a:active {
 #description-work { 
     flex: initial;
     width: 70%; 
+    background-color: rgb(238, 238, 238);
 }
 
 #work-categories {
