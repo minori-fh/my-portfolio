@@ -8,7 +8,7 @@
 
 #intro-page {
     background-color: rgb(238, 238, 238); 
-    color: black;
+    color: black;  
 }
 
 #about-me {
@@ -118,6 +118,7 @@
     margin-top: 100px; 
     text-align: center; 
     font-family: 'Josefin Sans', sans-serif;
+    z-index: 1000; 
 }
   
 #work-link {
@@ -125,6 +126,7 @@
     margin-top: 100px; 
     text-align: center; 
     font-family: 'Josefin Sans', sans-serif;
+    z-index: 1000; 
 }
 
 #scroll-arrow1, #scroll-arrow2 {

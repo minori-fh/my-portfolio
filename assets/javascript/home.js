@@ -60,16 +60,18 @@ $(".cube").on("mouseover",function(){
     console.log(finishLoad)
 
     if (newPage != 1 && finishLoad != 0){
-        $("#cube-" + cubeNumber).animate({height: "350px", width: "350px", top: -175, bottom: -200}, 300);
+        console.log("wtf")
+        $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : "0.3s ease-out"});
+        $("#cube-" + cubeNumber).animate({height: "350px", width: "350px", top: -175, bottom: -200}, 0);
     
-        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({height: "325px", width: "80px", top: -160, bottom: -200}, 300);
-        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({height: "325px", width: "80px", top: -160, bottom: -200}, 300);
+        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({height: "325px", width: "80px", top: -160, bottom: -200}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({height: "325px", width: "80px", top: -160, bottom: -200}, 0);
     
-        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({height: "315px", width: "70px", top: -155, bottom: -200}, 300);
-        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({height: "315px", width: "70px", top: -155, bottom: -200}, 300);
+        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({height: "315px", width: "70px", top: -155, bottom: -200}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({height: "315px", width: "70px", top: -155, bottom: -200}, 0);
     
-        $("#cube-" + (parseFloat(cubeNumber)+3)).animate({width: "60px"}, 300)
-        $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px"}, 300)
+        $("#cube-" + (parseFloat(cubeNumber)+3)).animate({width: "60px"}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px"}, 0)
     }
 });
 
@@ -80,7 +82,6 @@ $("#cube-1").on("mouseover",function(){
     console.log(finishLoad)
 
     if (newPage != 1 && finishLoad != 0){
-        $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : "0.05s ease-out"});
 
         $("#cube-0").css({"backgroundColor" : "#0101c5"});
 
@@ -88,7 +89,7 @@ $("#cube-1").on("mouseover",function(){
         $("#background-image1").show()
 
         $("#cube-2").css({"backgroundColor" : "#5a81ff"});
-        $("#cube-3").css({"backgroundColor" : "#7a9dfb"});
+        $("#cube-3").css({"backgroundColor" : "#9fb9ff"});
     }
 });
 
@@ -103,7 +104,6 @@ $("#cube-2").on("mouseover",function(){
     console.log(finishLoad)
 
     if (newPage != 1 && finishLoad != 0){
-        $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : "0.05s ease-out"},{queue: false});
 
         $("#cube-0").css({"backgroundColor" : "#5f025f"},{queue: false});
         $("#cube-1").css({"backgroundColor" : "#a31ea3"},{queue: false});
@@ -140,10 +140,10 @@ $("#cubez").on("mouseleave", function(){
 
     if (newPage != 1 && finishLoad != 0){
 
-        $("#cube-0").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 300);
-        $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 300);
-        $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 300);
-        $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 300);
+        $("#cube-0").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 0);
+        $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 0);
+        $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 0);
+        $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 0);
 
         $("#cube-0").css({"backgroundColor" : "#000000"});
         $("#cube-1").css({"backgroundColor" : "#1f1e1e"});
@@ -189,16 +189,10 @@ $("#cube-0").on("mouseenter", function(){
         });
 });
 
-$("#cube-0").on("mouseleave", function(){
-    $("#scroll-arrow1").hide()
-});
-
 //Animate text on cube-1 ABOUT ME
 $("#cube-1").on("mouseenter", function(){
     if (finishLoad != 0){
-        setTimeout(function(){
-            $("#about-me-link").show()
-        }, 500)
+        $("#about-me-link").show()
     }
 
     // Wrap every letter in a span
@@ -229,18 +223,13 @@ $("#cube-1").on("mouseenter", function(){
         });
 });
 
-$("#cube-1").on("mouseleave", function(){
-    $("#about-me-link").hide()
-});
-
 
 //Animate text on cube-2 WORK
 $("#cube-2").on("mouseenter", function(){
+    $("#work-link").show()
 
     if (finishLoad != 0){
-        setTimeout(function(){
-            $("#work-link").show()
-        }, 500)
+        $("#work-link").show()
     }
 
     $('#work-link').each(function(){
@@ -268,10 +257,6 @@ $("#cube-2").on("mouseenter", function(){
             return 100 + 30 * i;
         }
         });
-});
-
-$("#cube-2").on("mouseleave", function(){
-    $("#work-link").hide()
 });
 
 //Animate text on cube-3 scroll arrow
@@ -310,15 +295,13 @@ $("#cube-3").on("mouseenter", function(){
         });
 });
 
-$("#cube-3").on("mouseleave", function(){
-    $("#scroll-arrow2").hide()
-});
-
 //Event handler on click (about me or work page)
 $("#about-me-link").on("click", function(){
     $("#work-link").empty()
     $("#about-me-link").empty()
     $("#scroll-arrow1, #scroll-arrow2").empty()
+    $("#background-image1").hide()
+    $("#background-image2").hide()
    
     newPage = 1; 
 
@@ -326,17 +309,16 @@ $("#about-me-link").on("click", function(){
     $("#cube-1").css({"backgroundColor" : "#1f1e1e"});
     $("#cube-2").css({"backgroundColor" : "#3b3b3b"});
     $("#cube-3").css({"backgroundColor" : "#535353"});
-    $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
+    // $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
 
-    $(".cube").animate({"margin-top": "200px"}, {duration: 400, queue: false});
-    $("#cube-0").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
-    $("#cube-1").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
-    $("#cube-2").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
-    $("#cube-3").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
+    $("#cube-0").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
+    $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
+    $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
+    $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
 
-    setTimeout(function(){
-        window.location.href = "about-me.html"
-    }, 3000)
+    // setTimeout(function(){
+    //     window.location.href = "about-me.html"
+    // }, 3000)
 });
 
 //Event handler on click (about me or work page)
@@ -344,24 +326,26 @@ $("#work-link").on("click", function(){
     $("#about-me-link").empty()
     $("#work-link").empty()
     $("#scroll-arrow1, #scroll-arrow2").empty()
+    $("#background-image1").hide()
+    $("#background-image2").hide()
     newPage = 1; 
-
 
     $("#cube-0").css({"backgroundColor" : "#000000"});
     $("#cube-1").css({"backgroundColor" : "#1f1e1e"});
     $("#cube-2").css({"backgroundColor" : "#3b3b3b"});
     $("#cube-3").css({"backgroundColor" : "#535353"});
-    $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
+    // $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : ""});
 
-    $(".cube").animate({"margin-top": "200px"}, {duration: 400, queue: false});
-    $("#cube-0").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
-    $("#cube-1").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
-    $("#cube-2").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
-    $("#cube-3").animate({height: "2px", bottom: -150, top: -200}, {duration: 400, queue: false});
 
-    setTimeout(function(){
-        window.location.href = "work.html"
-    }, 3000)
+    $("#cube-0").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
+    $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
+    $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
+    $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
+
+
+    // setTimeout(function(){
+    //     window.location.href = "work.html"
+    // }, 3000)
 });
 
 }); //END: document ready function
