@@ -2,7 +2,7 @@
 
 ## Pictures of Site
 Initial loading page: 
-![Site Screenshot](assets/images/Portfolio.mov)
+![Site Screenshot](assets/images/site1.png)
 About Me page: 
 ![Site Screenshot](assets/images/site2.png)
 Projects page: 
