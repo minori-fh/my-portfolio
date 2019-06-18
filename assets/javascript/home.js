@@ -316,9 +316,9 @@ $("#about-me-link").on("click", function(){
     $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
     $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
 
-    // setTimeout(function(){
-    //     window.location.href = "about-me.html"
-    // }, 3000)
+    setTimeout(function(){
+        window.location.href = "about-me.html"
+    }, 2000)
 });
 
 //Event handler on click (about me or work page)
@@ -343,9 +343,9 @@ $("#work-link").on("click", function(){
     $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
 
 
-    // setTimeout(function(){
-    //     window.location.href = "work.html"
-    // }, 3000)
+    setTimeout(function(){
+        window.location.href = "work.html"
+    }, 2000)
 });
 
 }); //END: document ready function

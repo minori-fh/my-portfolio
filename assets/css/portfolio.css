@@ -215,12 +215,14 @@ a, a:visited, a:active {
 
 /* PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING*/
 #description {
-    font-size: 40px; 
+    font-size: 35px; 
     justify-content: center; 
-    background-color: rgb(252, 244, 180); 
+    background-color: rgb(238, 238, 238); 
+    color: black; 
     flex: initial;
     width: 70%; 
     padding-left: 30px; 
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #propic-column {
@@ -228,7 +230,10 @@ a, a:visited, a:active {
     align-items: center;
     /* background-color: rgb(241, 238, 215);  */
     flex: initial; 
+    background-color: white; 
+    color: black;
     width: 30%; 
+    font-size: 40px; 
 }
 
 #propic {
