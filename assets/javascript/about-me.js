@@ -1,4 +1,5 @@
 $(document).ready(function() {
+$("#chat3").hide()
 
 $("#home1, #whereIComeFrom").on("mouseover", function(){
     $(this).addClass("rotate-vert-center")
@@ -14,4 +15,10 @@ $("#scroll-down1").on("click", function(){
         scrollTop: $("#about-me2").offset().top},
         800);
 });
+
+//Event handler for when user clicks on mail icon
+$(".mail-icon").on("click", function(){
+    $("#chat3").show()
+});
+
 }) //END: document ready function
