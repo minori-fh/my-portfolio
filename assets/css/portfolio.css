@@ -152,11 +152,11 @@
     margin-top: 100px; 
 }
 
-#mail-icon {
+.mail-icon {
     margin-top: 2px; 
 }
 
-#li-icon, #gh-icon, #mail-icon {
+#li-icon, #gh-icon, .mail-icon {
     opacity: 0.5;
 }
 
@@ -233,7 +233,6 @@ a, a:visited, a:active {
     background-color: white; 
     color: black;
     width: 30%; 
-    font-size: 40px; 
 }
 
 #propic {
@@ -247,12 +246,14 @@ a, a:visited, a:active {
 }
 
 #about-header {
-    font-size: 60px; 
+    font-size: 50px; 
 }
 
 #button-row {
-    margin-top: 0px; 
-    height: 35%; 
+    margin-top: 20px; 
+    margin-right: 20px; 
+    height: 10%; 
+    justify-content: flex-end; 
 }
 
 #how, #where {
@@ -277,8 +278,9 @@ a, a:visited, a:active {
 }
 
 #self-description {
-    height: 55%;
-    align-items: flex-end; 
+    height: 90%;
+    width: 70%; 
+    align-items: center; 
     padding-bottom: 25px; 
 }
 
@@ -295,7 +297,7 @@ a, a:visited, a:active {
 
 /* PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING*/
 #project-header {
-    font-size: 60px; 
+    font-size: 50px; 
 }
 
 #project-header-row {
