@@ -58,6 +58,17 @@ $("#trivia-col").on("mouseleave", function(){
     $("#trivia-links").hide()
 })
 
+$("#liri-col").on("mouseover", function(){
+    $("#liri").attr("src","assets/images/blank.png")
+    $("#liri-links").show()
+})
+
+$("#liri-col").on("mouseleave", function(){
+    $("#liri").attr("src","assets/images/liri.png")
+    $("#liri-links").hide()
+})
+
+
 $("#scroll-down2").on("click", function(){
     
     $('html,body').animate({
