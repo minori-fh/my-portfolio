@@ -288,6 +288,16 @@ a, a:visited, a:active {
     padding-bottom: 25px; 
 }
 
+#self-description2 {
+    height: 90%;
+    width: 90%; 
+    font-size: 20px; 
+    align-items: center; 
+    padding-bottom: 25px;
+    overflow-wrap: break-word;  
+    text-align: justify; 
+}
+
 #whereIcomefrom-button, #home-button1 {
     font-size: 15px; 
     color: grey; 
@@ -300,6 +310,10 @@ a, a:visited, a:active {
 #scroll-row1, #scroll-row2 {
     justify-content: center; 
     opacity: 0.7; 
+}
+
+#mapMarker {
+    text-align: bottom; 
 }
 
 /* PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING*/
