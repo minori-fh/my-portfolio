@@ -318,6 +318,7 @@ $("#about-me-link").on("click", function(){
     $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
     $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
     $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
+    $(".cube").css("margin-top","70px")
 
     setTimeout(function(){
         window.location.href = "about-me.html"
@@ -347,7 +348,7 @@ $("#work-link").on("click", function(){
     $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
     $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
     $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
-
+    $(".cube").css("margin-top","70px")
 
     setTimeout(function(){
         window.location.href = "work.html"
