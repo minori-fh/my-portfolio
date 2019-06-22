@@ -8,6 +8,21 @@ $("#trivia-links").hide()
 $("#liri-links").hide()
 $("#chat2").hide()
 
+// Event handler: mouseover and mouseleave to add rotate class
+$(".tech-icon").addClass("rotate-vert-center")
+setTimeout(function(){
+    $(".tech-icon").removeClass("rotate-vert-center")
+}, 1000)
+
+$(".tech-icon").on("mouseover", function(){
+    $(this).addClass("rotate-vert-center")
+})
+
+$(".tech-icon").on("mouseleave", function(){
+    $(this).removeClass("rotate-vert-center")
+})
+
+
 //Event handler: mouseover on project images
 $("#hangman-col").on("mouseover", function(){
     $("#hangman").attr("src","assets/images/blank.png")
