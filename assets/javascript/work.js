@@ -7,7 +7,6 @@ $("#sip-links").hide()
 $("#trivia-links").hide()
 $("#liri-links").hide()
 $("#chat2").hide()
-$("#work2").hide()
 
 //Event handler: mouseover on project images
 $("#hangman-col").on("mouseover", function(){
@@ -72,7 +71,6 @@ $("#liri-col").on("mouseleave", function(){
 
 
 $("#scroll-down2").on("click", function(){
-    $("#work2").show()
     
     $('html,body').animate({
         scrollTop: $("#work2").offset().top},

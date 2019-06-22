@@ -56,6 +56,7 @@
 .left-header-row, #propic-row, .contact-row {
     justify-content: center; 
     vertical-align: middle; 
+    text-align: center
 } 
 
 .contact-row {
@@ -74,9 +75,29 @@
     margin-top: 10px; 
 }
 
-.main-text-row {
+#self-description1 {
     height: 90%; 
     align-items: center; 
+    font-size: 30px; 
+}
+
+#self-description2 {
+    font-size: 25px; 
+    margin-top: 70px
+}
+
+#self-description3 {
+    font-size: 20px;
+    width: 85%;
+    overflow-wrap: break-word;  
+    text-align: justify; 
+    margin-top: 80px
+}
+
+#self-description4 {
+    margin-top: 100px;
+    font-size: 25px;
+    align-items: center
 }
 
 /* projects row and column */
@@ -125,6 +146,10 @@
 .stack-row {
     justify-content: center; 
     margin-top: 30px; 
+}
+
+#coffee-icon {
+    margin-left: 20px;
 }
 
 

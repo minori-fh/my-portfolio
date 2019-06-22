@@ -76,15 +76,6 @@ a, a:visited, a:active {
   }
 
 /* PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING*/
-#self-description1 {
-    font-size: 30px; 
-}
-
-#self-description2 {
-    font-size: 20px; 
-    overflow-wrap: break-word;  
-    text-align: justify; 
-}
 
 #scroll-row1, #scroll-row2 {
     justify-content: center; 
