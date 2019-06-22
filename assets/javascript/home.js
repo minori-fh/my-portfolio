@@ -22,8 +22,9 @@ var finishLoad = 0;
 //Initial page line animation
 $(".cube").css("height","2px")
 $(".cube").css("width","1px")
-$(".cube").css("margin-top","150px")
+$(".cube").css("margin-top","200px")
 $(".cube").animate({width: "80px"}, 1000)
+$("#contact-row-index").css("margin-top", "200px")
 
 function typeWriter(){
     if (i<txt.length){
@@ -36,20 +37,21 @@ function typeWriter(){
 
 setTimeout(function(){
     typeWriter()
-    $("#myName-column").css("margin-top", "150px")
-    $("#contact-row-index").css("margin-top", "50px")
+    $("#myName-column").css("margin-top", "167px")
+    $("#contact-row-index").css("margin-top", "0px")
     $(".cube").css("margin-top","0px")
 }, 1000)
 
 setTimeout(function(){
     $("#myName-column").text("")
+    $("#contact-row-index").css("margin-top", "33px")
 }, 4300)
 
 setTimeout(function(){
-    $("#cube-0").animate({height: "300px", top: -150, bottom: -200}, 600);
-    $("#cube-1").animate({height: "300px", top: -150, bottom: -200}, 800);
-    $("#cube-2").animate({height: "300px", top: -150, bottom: -200}, 1000);
-    $("#cube-3").animate({height: "300px", top: -150, bottom: -200}, 1200);
+    $("#cube-0").animate({height: "300px", top: -70, bottom: -200}, 600);
+    $("#cube-1").animate({height: "300px", top: -70, bottom: -200}, 800);
+    $("#cube-2").animate({height: "300px", top: -70, bottom: -200}, 1000);
+    $("#cube-3").animate({height: "300px", top: -70, bottom: -200}, 1200);
     finishLoad = 1;
 }, 4300)
 
@@ -57,30 +59,30 @@ setTimeout(function(){
 $(".cube").on("mouseover",function(){
     cubeNumber = $(this).attr("cube-value")
     console.log(cubeNumber)
-    console.log(newPage)
-    console.log(finishLoad)
+    // console.log(newPage)
+    // console.log(finishLoad)
 
     if (newPage != 1 && finishLoad != 0){
         console.log("wtf")
         $("#cube-0, #cube-1, #cube-2, #cube-3").css({"transition" : "0.3s ease-out"});
-        $("#cube-" + cubeNumber).animate({height: "350px", width: "350px", top: -175, bottom: -200}, 0);
+        $("#cube-" + cubeNumber).animate({height: "350px", width: "350px", top: -100, bottom: -180}, 0);
     
-        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({height: "325px", width: "80px", top: -160, bottom: -200}, 0);
-        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({height: "325px", width: "80px", top: -160, bottom: -200}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)+1)).animate({height: "325px", width: "80px", top: -90, bottom: -180}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)-1)).animate({height: "325px", width: "80px", top: -90, bottom: -180}, 0);
     
-        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({height: "315px", width: "70px", top: -155, bottom: -200}, 0);
-        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({height: "315px", width: "70px", top: -155, bottom: -200}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)+2)).animate({height: "315px", width: "70px", top: -85, bottom: -180}, 0);
+        $("#cube-" + (parseFloat(cubeNumber)-2)).animate({height: "315px", width: "70px", top: -85, bottom: -180}, 0);
     
-        $("#cube-" + (parseFloat(cubeNumber)+3)).animate({width: "60px"}, 0)
-        $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px"}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)+3)).animate({width: "60px", height: "305", top: -80, bottom: -180}, 0)
+        $("#cube-" + (parseFloat(cubeNumber)-3)).animate({width: "60px", height: "305", top: -80, bottom: -180}, 0)
     }
 });
 
 //Animate cube width on mouseover
 $("#cube-1").on("mouseover",function(){
-    console.log(cubeNumber)
-    console.log(newPage)
-    console.log(finishLoad)
+    // console.log(cubeNumber)
+    // console.log(newPage)
+    // console.log(finishLoad)
 
     if (newPage != 1 && finishLoad != 0){
 
@@ -100,9 +102,9 @@ $("#cube-1").on("mouseleave",function(){
 
 //Animate cube width on mouseover
 $("#cube-2").on("mouseover",function(){
-    console.log(cubeNumber)
-    console.log(newPage)
-    console.log(finishLoad)
+    // console.log(cubeNumber)
+    // console.log(newPage)
+    // console.log(finishLoad)
 
     if (newPage != 1 && finishLoad != 0){
 
@@ -141,10 +143,10 @@ $("#cubez").on("mouseleave", function(){
 
     if (newPage != 1 && finishLoad != 0){
 
-        $("#cube-0").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 0);
-        $("#cube-1").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 0);
-        $("#cube-2").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 0);
-        $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, 0);
+        $("#cube-0").animate({width: "80px", height: "300px", top: -80, bottom: -200}, 0);
+        $("#cube-1").animate({width: "80px", height: "300px", top: -80, bottom: -200}, 0);
+        $("#cube-2").animate({width: "80px", height: "300px", top: -80, bottom: -200}, 0);
+        $("#cube-3").animate({width: "80px", height: "300px", top: -80, bottom: -200}, 0);
 
         $("#cube-0").css({"backgroundColor" : "#000000"});
         $("#cube-1").css({"backgroundColor" : "#1f1e1e"});
@@ -319,7 +321,10 @@ $("#about-me-link").on("click", function(){
 
     setTimeout(function(){
         window.location.href = "about-me.html"
+
     }, 2000)
+
+
 });
 
 //Event handler on click (about me or work page)

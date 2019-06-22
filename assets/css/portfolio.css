@@ -1,116 +1,8 @@
-#intro-page, #about-me, #work, #about-me2, #work2 {
-    height: 100vh;
-    width: 100vw; 
-    font-family: 'Oswald', sans-serif;
-    max-width: 100%; 
-    max-height: 100%; 
-}
-
-#intro-page {
-    background-color: rgb(238, 238, 238); 
-    color: black;  
-}
-
-#about-me {
-    background-color: white; 
-    color: black; 
-}
-
-#work {
-    background-color: rgb(205, 226, 251); 
-}
 /* INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING INTRO-PAGE SECTION STYLING */
-/* CSS properties for flexbox */
-.row {
-    display: flex; 
-    flex-direction: row; 
-    width: 100vw; 
-    max-width: 100%; 
-}
-
-.column {
-    display: flex; 
-    flex-direction: column; 
-    flex: 1; 
-    max-width: 100%; 
-}
-
 /* CSS properties for navbar */
 #MH-logo {
     margin-top: 40px; 
     margin-left: 20px; 
-}
-
-#row-nav {
-    height: 15%; 
-}
-
-#column-nav {
-    justify-content: center; /*horizontal alignment*/
-    align-items: center; /*vertical alignment*/
-}
-
-/* Cube styling */
-
-#cubes-row {
-    height: 300px;
-    width: 100%;  
-    /* margin-top: 100px;  */
-    justify-content: center; 
-}
-
-#cube-margin-1, #cube-margin-2 {
-    width: 100vh - 150px; 
-}
-
-#cube-0 {
-    background-color: #000000;
-    flex: initial; 
-    width: 80px; 
-    height: 300px; 
-    position: relative;
-    top: 0;
-    bottom: 0; 
-    /* transition: 1s ease-in-out; */
-}
-
-#cube-1 {
-    background-color: #1f1e1e;
-    flex: initial; 
-    width: 80px; 
-    height: 300px; 
-    position: relative;
-    top: 0;
-    bottom: 0; 
-    /* transition: 1s ease-in-out; */
-}
-
-#cube-2 {
-    background-color: #3b3b3b; 
-    flex: initial;
-    width: 80px; 
-    height: 300px;
-    position: relative;
-    top: 0;
-    bottom: 0; 
-    /* transition: 1s ease-in-out;   */
-}
-
-#cube-3 {
-    background-color: #535353;
-    flex: initial; 
-    width: 80px; 
-    height: 300px; 
-    position: relative;
-    top: 0;
-    bottom: 0; 
-    /* transition: 1s ease-in-out; */
-}
-
-#cubez {
-    flex: initial; 
-    width: 540px; 
-    justify-content: center; 
 }
 
 #about-me-link {
@@ -141,17 +33,6 @@
     width: 60px; 
 }
 
-#contact-row-index {
-    justify-content: center; 
-    margin-top: 200px; 
-}
-
-#contact-row-work, #contact-row-about {
-    justify-content: center; 
-    vertical-align: middle; 
-    margin-top: 100px; 
-}
-
 .mail-icon {
     margin-top: 2px; 
 }
@@ -162,29 +43,13 @@
 
 #chat1, #chat2, #chat3 {
     justify-content: center; 
+    font-size: 15px; 
 }
 
 /* Styling for links */
 a, a:visited, a:active {
     color: inherit;
     text-decoration: underline; 
-}
-
-#cube-1, #cube-2 {
-    color: white; 
-    font-size: 30px; 
-}
-
-/* My name row styling */
-#my-name-row {
-    text-align: center; 
-}
-
-#myName-column {
-    width: 320px; 
-    font-size: 33px; 
-    height: 50px; 
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Styling for buttons */
@@ -210,101 +75,15 @@ a, a:visited, a:active {
     }
   }
 
-#background-image1, #background-image2 {
-    opacity: 0.4;
-    position: absolute; 
-    width: 100%; 
-    height: 100%
-}
-
 /* PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING*/
-#description {
-    font-size: 35px; 
-    justify-content: center; 
-    background-color: rgb(238, 238, 238); 
-    color: black; 
-    flex: initial;
-    width: 70%; 
-    padding-left: 30px; 
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-#propic-column {
-    justify-content: center; 
-    align-items: center;
-    /* background-color: rgb(241, 238, 215);  */
-    flex: initial; 
-    background-color: white; 
-    color: black;
-    width: 30%; 
-}
-
-#propic {
-    border: solid white 3px; 
-    border-radius: 500px; 
-}
-
-#description, #propic-column {
-    height: 100vh; 
-
-}
-
-#about-header {
-    font-size: 50px; 
-}
-
-#button-row {
-    margin-top: 20px; 
-    margin-right: 20px; 
-    height: 10%; 
-    justify-content: flex-end; 
-}
-
-#how, #where {
-    background-color: rgb(250, 187, 70);
-    border: none; 
-    height: 30px; 
-    color: white; 
-    font-size: 15px; 
-}
-
-#where {
-    margin-left: 10px; 
-}
-
-#about-header-row, #propic-row {
-    justify-content: center; 
-    vertical-align: middle; 
-}
-
-.house {
-    margin-right: 40px; 
-}
-
-#self-description {
-    height: 90%;
-    width: 70%; 
-    align-items: center; 
-    padding-bottom: 25px; 
+#self-description1 {
+    font-size: 30px; 
 }
 
 #self-description2 {
-    height: 90%;
-    width: 90%; 
     font-size: 20px; 
-    align-items: center; 
-    padding-bottom: 25px;
     overflow-wrap: break-word;  
     text-align: justify; 
-}
-
-#whereIcomefrom-button, #home-button1 {
-    font-size: 15px; 
-    color: grey; 
-}
-
-#button-description {
-    height: 10%; 
 }
 
 #scroll-row1, #scroll-row2 {
@@ -312,69 +91,5 @@ a, a:visited, a:active {
     opacity: 0.7; 
 }
 
-#mapMarker {
-    text-align: bottom; 
-}
 
-/* PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING PROJECT SECTION STYLING*/
-#project-header {
-    font-size: 50px; 
-}
 
-#project-header-row {
-    justify-content: center; 
-    vertical-align: middle; 
-}
-
-#projects-column, #description-work{
-    height: 100vh; 
-}
-
-#projects-column{
-    justify-content: center; 
-    align-items: center;
-    flex: initial;
-    width: 30%;
-    background-color: white; 
-}
-
-#description-work { 
-    flex: initial;
-    width: 70%; 
-    background-color: rgb(238, 238, 238);
-}
-
-#work-categories {
-    text-align: center; 
-    font-size: 20px; 
-    margin-top: 70px; 
-    height: 20%; 
-}
-
-#projects-row1 {
-    height: 30%;
-}
-
-#projects-row2 {
-    height: 30%; 
-}
-
-.project {
-    width: 300px; 
-    height: 175px; 
-}
-
-.project-subtitle {
-    text-align: center; 
-    width: 100%; 
-}
-
-#button-row2 {
-    justify-content: flex-end;
-    height: 10%; 
-}
-
-#home2 {
-    margin-left: 20px; 
-    margin-top: 20px; 
-}

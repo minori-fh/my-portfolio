@@ -1,0 +1,74 @@
+/* Cube styling */
+
+#cubes-row {
+    height: 300px;
+    width: 100%;  
+    /* margin-top: 100px;  */
+    justify-content: center; 
+}
+
+#cube-margin-1, #cube-margin-2 {
+    width: 100vh - 150px; 
+}
+
+#cube-0 {
+    background-color: #000000;
+    flex: initial; 
+    width: 80px; 
+    height: 300px; 
+    position: relative;
+    top: 0;
+    bottom: 0; 
+    /* transition: 1s ease-in-out; */
+}
+
+#cube-1 {
+    background-color: #1f1e1e;
+    flex: initial; 
+    width: 80px; 
+    height: 300px; 
+    position: relative;
+    top: 0;
+    bottom: 0; 
+    /* transition: 1s ease-in-out; */
+}
+
+#cube-2 {
+    background-color: #3b3b3b; 
+    flex: initial;
+    width: 80px; 
+    height: 300px;
+    position: relative;
+    top: 0;
+    bottom: 0; 
+    /* transition: 1s ease-in-out;   */
+}
+
+#cube-3 {
+    background-color: #535353;
+    flex: initial; 
+    width: 80px; 
+    height: 300px; 
+    position: relative;
+    top: 0;
+    bottom: 0; 
+    /* transition: 1s ease-in-out; */
+}
+
+#cubez {
+    flex: initial; 
+    width: 540px; 
+    justify-content: center; 
+}
+
+#cube-1, #cube-2 {
+    color: white; 
+    font-size: 30px; 
+}
+
+#background-image1, #background-image2 {
+    opacity: 0.4;
+    position: absolute; 
+    width: 100%; 
+    height: 100%
+}

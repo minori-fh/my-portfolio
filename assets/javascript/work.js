@@ -5,6 +5,7 @@ $("#expressflix-links").hide()
 $("#polytopia-links").hide()
 $("#sip-links").hide()
 $("#trivia-links").hide()
+$("#liri-links").hide()
 $("#chat2").hide()
 
 //Event handler: mouseover on project images

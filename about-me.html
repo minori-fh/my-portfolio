@@ -8,6 +8,7 @@
 
     <!-- Link to CSS -->
     <link rel = "stylesheet" type = "text/css" href = "assets/css/portfolio.css">
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/page-structure.css">
     <!-- Link to jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Link to Google Fonts -->
@@ -17,35 +18,29 @@
 
 <section id = "about-me">
     <div class = "row">
-        <div class = "column" id = "propic-column">
-            <div class = "row" id = "about-header-row">
-                <p id = "about-header"> &lt ABOUT ME /&gt</p>
+        <div class = "column left">
+            <div class = "row left-header-row">
+                <p> &lt ABOUT ME /&gt</p>
             </div>
 
             <div class = "row" id = "propic-row">
                 <img src = "assets/images/propic.png" id = "propic" width = "300px">
             </div>
 
-            <div class = "row" id = "contact-row-about">
-                <div class = "column contact">
-                    <a href = "https://www.linkedin.com/in/minorifh/" target = "_blank"><img src = "assets/images/linkedinIcon.png" id = "li-icon" width = "40px" opacity = "0.8"></a>
-                </div>
-                <div class = "column contact">
-                    <a href = "https://github.com/minori-fh" target = "_blank"><img src = "assets/images/githubIcon.png" id = "gh-icon" width = "40px" opacity = "0.8"></a>
-                </div>
-                <div class = "column contact">
-                    <img src = "assets/images/mailIcon.png" class = "mail-icon" width = "40px" opacity = "0.8">
-                </div>
+            <div class = "row contact-row">
+                <a href = "https://www.linkedin.com/in/minorifh/" target = "_blank"><img src = "assets/images/linkedinIcon.png" id = "li-icon" width = "40px" height = "40px" opacity = "0.8"></a>
+                <a href = "https://github.com/minori-fh" target = "_blank"><img src = "assets/images/githubIcon.png" id = "gh-icon" width = "40px" height = "40px" opacity = "0.8"></a>
+                <img src = "assets/images/mailIcon.png" class = "mail-icon" width = "40px" height = "37px" opacity = "0.8">
             </div>
             <div class = "row" id = "chat3">
                 Let's chat! E-mail: minori.fh@gmail.com
             </div>
         </div>
-        <div class = "column" id = "description">
-            <div class = "row" id = "button-row">
-                <a href = "index.html"><img src = "assets/images/house.png" id = "home1" class = "house" width = "30px"></a>
+        <div class = "column right">
+            <div class = "row home-row">
+                <a href = "index.html"><img src = "assets/images/house.png" width = "30px"></a>
             </div>
-            <div class = "row" id = "self-description">
+            <div class = "row main-text-row" id = "self-description1">
                 Hi, my name is Minori. <br>
                 I'm a consultant turned full-stack developer! <br><br>
     
@@ -57,21 +52,18 @@
         </div>
     </div>
 </section>
-    
 
 
 <section id = "about-me2">
-
-<section id = "about-me">
     <div class = "row">
-        <div class = "column" id = "propic-column">
+        <div class = "column left">
 
         </div>
-        <div class = "column" id = "description">
-            <div class = "row" id = "button-row">
-                <a href = "index.html"><img src = "assets/images/house.png" id = "home1" class = "house" width = "30px"></a>
+        <div class = "column right">
+            <div class = "row home-row">
+                <a href = "index.html"><img src = "assets/images/house.png" width = "30px"></a>
             </div>
-            <div class = "row" id = "self-description2">
+            <div class = "row main-text-row" id = "self-description2">
                 Currently: San Francisco <br>
                 Future: pending <br>
                 Move count: 9 <br><br><br><br>
@@ -103,8 +95,7 @@
         </div>
     </div>
 </section>
-            
-</section>
+        
 <!-- Link to javascript -->
 <script src="assets/javascript/home.js"></script>
 <script src="assets/javascript/about-me.js"></script>
