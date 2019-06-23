@@ -4,10 +4,23 @@
     font-family: 'Josefin Sans', sans-serif; 
     color: black;
     box-sizing: border-box; 
+    transition: all 0.7s ease-in-out;
 }
 
-#intro-page {
+#intro-page.rotated {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+#about-me.rotated, #work.rotated {
+    transform: translateX(100%) rotateY(180deg);
+}
+
+/* #intro-page {
     background-color: rgb(238, 238, 238);  
+} */
+
+span {
+    flex-wrap: wrap; 
 }
 
 /* CSS properties for flexbox */
@@ -77,7 +90,7 @@
 
 .menu-row {
     font-size: 15px; 
-    color: rgb(190, 190, 190)
+    color: grey
 }
 
 .menu-home, .menu-work, .menu-about {
@@ -129,6 +142,10 @@
     margin-top: 100px;
     font-size: 25px;
     align-items: center
+}
+
+#codinghrs-col, #coffeecups-col {
+    color: grey
 }
 
 /* projects row and column */

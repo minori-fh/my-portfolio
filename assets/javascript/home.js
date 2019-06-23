@@ -320,12 +320,12 @@ $("#about-me-link").on("click", function(){
     $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
     $(".cube").css("margin-top","70px")
 
+    document.getElementById('intro-page').classList.toggle('rotated');
+
     setTimeout(function(){
         window.location.href = "about-me.html"
 
-    }, 2000)
-
-
+    }, 400)
 });
 
 //Event handler on click (about me or work page)
@@ -350,9 +350,11 @@ $("#work-link").on("click", function(){
     $("#cube-3").animate({width: "80px", height: "300px", top: -150, bottom: -200}, {duration: 0});
     $(".cube").css("margin-top","70px")
 
+    document.getElementById('intro-page').classList.toggle('rotated');
+
     setTimeout(function(){
         window.location.href = "work.html"
-    }, 2000)
+    }, 400)
 });
 
 //Event handler for when user clicks on mail icon
