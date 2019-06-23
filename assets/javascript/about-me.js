@@ -44,7 +44,7 @@ $(".mail-icon").on("click", function(){
 
 $(".menu-home").on("mouseover", function(){
     $(".home-icon-label").text("GO HOME")
-    $(this).animate({width: "80px"}, 300);
+    $(this).animate({width: "60px"}, 300);
 });
 
 $(".menu-home").on("mouseleave", function(){
@@ -54,7 +54,7 @@ $(".menu-home").on("mouseleave", function(){
 
 $(".menu-about").on("mouseover", function(){
     $(".about-icon-label").text("ABOUT ME")
-    $(this).animate({width: "80px"}, 300);
+    $(this).animate({width: "60px"}, 300);
 });
 
 $(".menu-about").on("mouseleave", function(){
@@ -64,7 +64,7 @@ $(".menu-about").on("mouseleave", function(){
 
 $(".menu-work").on("mouseover", function(){
     $(".work-icon-label").text("SEE WORK")
-    $(this).animate({width: "80px"}, 300);
+    $(this).animate({width: "60px"}, 300);
 });
 
 $(".menu-work").on("mouseleave", function(){
