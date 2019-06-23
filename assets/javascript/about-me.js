@@ -52,16 +52,6 @@ $(".menu-home").on("mouseleave", function(){
     $(this).animate({width: "40px"}, 100);
 });
 
-$(".menu-work").on("mouseover", function(){
-    $(".work-icon-label").text("SEE WORK")
-    $(this).animate({width: "80px"}, 300);
-});
-
-$(".menu-work").on("mouseleave", function(){
-    $(".work-icon-label").text("")
-    $(this).animate({width: "40px"}, 100);
-});
-
 $(".menu-about").on("mouseover", function(){
     $(".about-icon-label").text("ABOUT ME")
     $(this).animate({width: "80px"}, 300);
@@ -69,6 +59,16 @@ $(".menu-about").on("mouseover", function(){
 
 $(".menu-about").on("mouseleave", function(){
     $(".about-icon-label").text("")
+    $(this).animate({width: "40px"}, 100);
+});
+
+$(".menu-work").on("mouseover", function(){
+    $(".work-icon-label").text("SEE WORK")
+    $(this).animate({width: "80px"}, 300);
+});
+
+$(".menu-work").on("mouseleave", function(){
+    $(".work-icon-label").text("")
     $(this).animate({width: "40px"}, 100);
 });
 
