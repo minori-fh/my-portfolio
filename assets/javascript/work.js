@@ -7,21 +7,20 @@ $("#sip-links").hide()
 $("#trivia-links").hide()
 $("#liri-links").hide()
 $("#chat2").hide()
+$("#work2").hide()
 
 // Event handler: mouseover and mouseleave to add rotate class
 $(".tech-icon").addClass("rotate-vert-center")
 setTimeout(function(){
     $(".tech-icon").removeClass("rotate-vert-center")
-}, 1000)
+}, 700)
 
 $(".tech-icon").on("mouseover", function(){
     $(this).addClass("rotate-vert-center")
+    setTimeout(function(){
+        $(".tech-icon").removeClass("rotate-vert-center")
+    }, 700)
 })
-
-$(".tech-icon").on("mouseleave", function(){
-    $(this).removeClass("rotate-vert-center")
-})
-
 
 //Event handler: mouseover on project images
 $("#hangman-col").on("mouseover", function(){
@@ -86,7 +85,8 @@ $("#liri-col").on("mouseleave", function(){
 
 
 $("#scroll-down2").on("click", function(){
-    
+    $("#work2").show()
+
     $('html,body').animate({
         scrollTop: $("#work2").offset().top},
         800);

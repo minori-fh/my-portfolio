@@ -35,8 +35,8 @@
 .left {
     width: 30%; 
     height: 100vh; 
-    justify-content: center; 
-    vertical-align: middle; 
+    /* justify-content: center; 
+    vertical-align: middle;  */
     background-color: white;
     font-size: 50px; 
     position: fixed;
@@ -75,6 +75,37 @@
     margin-top: 10px; 
 }
 
+.menu-row {
+    font-size: 15px; 
+    color: rgb(190, 190, 190)
+}
+
+.menu-home, .menu-work, .menu-about {
+    height: 40px; 
+    width: 40px;
+    text-align: center
+}
+
+.home-icon-label, .work-icon-label, .about-icon-label {
+    justify-content: center;
+    margin-left: 5px
+}
+
+.menu-home {
+    background-color: rgb(80, 120, 165);
+    color: white;
+    margin-top: auto; 
+}
+
+.menu-work {
+    background-color: rgb(151, 204, 135);
+    color: black;
+}
+
+.menu-about {
+    background-color: rgb(253, 240, 165)
+}
+
 #self-description1 {
     height: 90%; 
     align-items: center; 
@@ -107,6 +138,10 @@
     margin-top: 70px; 
     height: 10%; 
     justify-content: space-evenly
+}
+
+#work-header-row {
+    margin-top: 25%; 
 }
 
 #stack-row {

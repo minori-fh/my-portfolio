@@ -1,9 +1,9 @@
 $(document).ready(function() {
 $("#chat3").hide()
+$("#about-me2").hide()
 
 var codingHrs = 0;
 var coffeeCups = 0;
-var intervalID; 
 
 function typeCoder(){
     if (codingHrs < 400){
@@ -38,6 +38,7 @@ $("#home1, #whereIComeFrom").on("mouseleave", function(){
 $("#scroll-down1").on("click", function(){
     countCode()
     countCoffee()
+    $("#about-me2").show()
 
     $('html,body').animate({
         scrollTop: $("#about-me2").offset().top},
@@ -48,5 +49,37 @@ $("#scroll-down1").on("click", function(){
 $(".mail-icon").on("click", function(){
     $("#chat3").show()
 });
+
+$(".menu-home").on("mouseover", function(){
+    $(".home-icon-label").text("GO HOME")
+    $(this).animate({width: "80px"}, 300);
+});
+
+$(".menu-home").on("mouseleave", function(){
+    $(".home-icon-label").text("")
+    $(this).animate({width: "40px"}, 100);
+});
+
+$(".menu-work").on("mouseover", function(){
+    $(".work-icon-label").text("SEE WORK")
+    $(this).animate({width: "80px"}, 300);
+});
+
+$(".menu-work").on("mouseleave", function(){
+    $(".work-icon-label").text("")
+    $(this).animate({width: "40px"}, 100);
+});
+
+$(".menu-about").on("mouseover", function(){
+    $(".about-icon-label").text("ABOUT ME")
+    $(this).animate({width: "80px"}, 300);
+});
+
+$(".menu-about").on("mouseleave", function(){
+    $(".about-icon-label").text("")
+    $(this).animate({width: "40px"}, 100);
+});
+
+
 
 }) //END: document ready function
