@@ -8,14 +8,14 @@ var coffeeCups = 0;
 function typeCoder(){
     if (codingHrs < 400){
         codingHrs++
-        $("#coding-hrs").text(" " + codingHrs + " hrs.")
+        $("#coding-hrs").text("  " + codingHrs + " hrs.")
     }
 };
 
 function typeCoffee(){
     if (coffeeCups < 100){
         coffeeCups++
-        $("#coffee-cups").text(" " + coffeeCups + " cups")
+        $("#coffee-cups").text("  " + coffeeCups + " cups")
     }
 };
 

@@ -15,14 +15,6 @@
     transform: translateX(100%) rotateY(180deg);
 }
 
-/* #intro-page {
-    background-color: rgb(238, 238, 238);  
-} */
-
-span {
-    flex-wrap: wrap; 
-}
-
 /* CSS properties for flexbox */
 .row {
     display: flex; 
@@ -145,8 +137,15 @@ span {
 }
 
 #codinghrs-col, #coffeecups-col {
-    color: grey
+    color: grey;
+    width: 10%; 
 }
+
+#coffeecups-col {
+    margin-left: 10px; 
+}
+
+
 
 /* projects row and column */
 #work-label-row, #stack-label-row, #stack-row {
