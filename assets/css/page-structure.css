@@ -44,8 +44,6 @@
 .left {
     width: 30%; 
     height: 100vh; 
-    /* justify-content: center; 
-    vertical-align: middle;  */
     background-color: white;
     font-size: 50px; 
     position: fixed;
@@ -58,7 +56,14 @@
     padding-left: 15px; 
     padding-right: 15px; 
     overflow-y: auto; 
-    margin-left: 30%; 
+    margin-left: 30%;
+    justify-content: center; 
+    vertical-align: middle;  
+}
+
+.left-main-content {
+    text-align: center; 
+    margin-top: 15%;  
 }
 
 /* left section: row styling  */
@@ -68,8 +73,12 @@
     text-align: center
 } 
 
+#propic-row {
+    margin-top: 10%; 
+}
+
 .contact-row {
-    margin-top: 50px; 
+    margin-top: 10%; 
 }
 
 #contact-row-index {
@@ -78,11 +87,11 @@
 }
 
 /* right section: row styling */ 
-.home-row {
+/* .home-row {
     justify-content: flex-end; 
     margin-right: 30px; 
     margin-top: 10px; 
-}
+} */
 
 .menu-row {
     font-size: 15px; 
@@ -124,20 +133,20 @@
 
 #self-description2 {
     font-size: 25px; 
-    margin-top: 70px
+    margin-top: -5%; 
 }
 
 #self-description3 {
-    font-size: 18px;
+    font-size: 20px;
     width: 85%;
     overflow-wrap: break-word;  
     text-align: justify; 
-    margin-top: 80px;
-    /* font-family: 'Josefin Sans', sans-serif; */
+    margin-top: 10%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #self-description4 {
-    margin-top: 100px;
+    margin-top: 7%;
     font-size: 25px;
     align-items: center
 }
