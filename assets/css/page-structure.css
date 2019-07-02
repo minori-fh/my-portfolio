@@ -7,6 +7,10 @@
     transition: all 0.7s ease-in-out;
 }
 
+#intro-page {
+    background-color: rgb(238, 238, 238); 
+}
+
 #intro-page.rotated {
     transform: translateX(-100%) rotateY(-180deg);
 }
@@ -112,9 +116,10 @@
 }
 
 #self-description1 {
-    height: 90%; 
+    height: 20%; 
     align-items: center; 
-    font-size: 30px; 
+    font-size: 35px; 
+    margin-top: 30%; 
 }
 
 #self-description2 {
@@ -123,11 +128,12 @@
 }
 
 #self-description3 {
-    font-size: 20px;
+    font-size: 18px;
     width: 85%;
     overflow-wrap: break-word;  
     text-align: justify; 
-    margin-top: 80px
+    margin-top: 80px;
+    /* font-family: 'Josefin Sans', sans-serif; */
 }
 
 #self-description4 {
@@ -138,11 +144,12 @@
 
 #codinghrs-col, #coffeecups-col {
     color: grey;
-    width: 10%; 
+    width: 13%; 
+    font-family: 'Roboto Slab', serif;
 }
 
 #coffeecups-col {
-    margin-left: 10px; 
+    margin-left: 5px; 
 }
 
 

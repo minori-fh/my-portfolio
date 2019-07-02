@@ -27,6 +27,13 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.main-text-row {
+    font-family: 'Roboto Slab', serif;
+}
+
+#array {
+    font-size: 20px; 
+}
 /* Styling for contact row */
 .contact {
     flex: initial; 
