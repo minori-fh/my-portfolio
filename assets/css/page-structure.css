@@ -87,12 +87,6 @@
 }
 
 /* right section: row styling */ 
-/* .home-row {
-    justify-content: flex-end; 
-    margin-right: 30px; 
-    margin-top: 10px; 
-} */
-
 .menu-row {
     font-size: 15px; 
     color: grey
@@ -167,9 +161,12 @@
 #work-label-row, #stack-label-row, #stack-row {
     text-align: center; 
     font-size: 20px; 
-    margin-top: 70px; 
     height: 10%; 
     justify-content: space-evenly
+}
+
+#stack-label-row {
+    margin-top: 15%; 
 }
 
 #work-header-row {

@@ -75,10 +75,18 @@ a, a:visited, a:active {
 
 /* PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING PORTFOLIO PAGE SECTION STYLING*/
 
+.scroll-row-label {
+    opacity: 0.3;
+    justify-content: center; 
+    margin-top: auto; 
+    align-content: flex-end; 
+}
+
 #scroll-row1, #scroll-row2 {
     justify-content: center; 
     opacity: 0.7; 
-    margin-top: auto
+    margin-top: auto;
+    margin-top: 0px; 
 }
 
 
