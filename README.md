@@ -2,11 +2,11 @@
 
 ## Pictures of Site
 Initial loading page: 
-![Site Screenshot](assets/images/site1.png)
+![Site Screenshot](assets/images/site/loading-page.gif)
 About Me page: 
-![Site Screenshot](assets/images/site2.png)
+![Site Screenshot](assets/images/site/about-me.gif)
 Projects page: 
-![Site Screenshot](assets/images/site3.png)
+![Site Screenshot](assets/images/site/stack-portfolio.gif)
 
 [Click here to visit site](https://minori-fh.github.io/my-portfolio/index.html)
 
