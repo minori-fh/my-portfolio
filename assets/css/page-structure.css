@@ -151,6 +151,10 @@
     font-family: 'Roboto Slab', serif;
 }
 
+#array {
+    margin-top: 5%; 
+}
+
 #coffeecups-col {
     margin-left: 5px; 
 }

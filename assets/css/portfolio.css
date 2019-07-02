@@ -97,6 +97,11 @@ a, a:visited, a:active {
     background-position: 0 88%;
 }
 
+#description-name {
+    font-family: 'Cookie', cursive;
+    font-size: 60px; 
+}
+
 
 
 
