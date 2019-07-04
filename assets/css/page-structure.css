@@ -222,6 +222,10 @@ body {
     margin-top: 30px; 
 }
 
+.card {
+    margin-top: 5%; 
+}
+
 @media (max-width: 1266px){
     .left-header-row {
         font-size: 40px; 
