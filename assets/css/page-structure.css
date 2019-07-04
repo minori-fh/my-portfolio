@@ -308,6 +308,13 @@
     #future {
         width: 29px; 
     }
+    /* work media queries */
+    .tech-label-col {
+        font-size: 12px; 
+    }
+    #stack-label-row {
+        font-size: 16px; 
+    }
 }
 
 @media (max-width: 768px){
@@ -334,6 +341,13 @@
     }
     .scroll-row-label {
         font-size: 12px; 
+    }
+    /* work media queries */
+    .tech-label-col {
+        font-size: 10px; 
+    }
+    #stack-label-row {
+        font-size: 14px; 
     }
 }
 
