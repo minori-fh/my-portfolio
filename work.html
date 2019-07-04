@@ -14,6 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Link to Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 </head>
 <body>
@@ -175,111 +177,46 @@
 
 <section id = "work2">
     <div class = "row">
-        <div class = "column left">
-        
-        </div>
-
         <div class = "column right">
             <div class = "row" id = "work-label-row">
                 <div class = "column">
-                    ALL
-                </div>
-                <div class = "column">
-                    JAVASCRIPT
-                </div>
-                <div class = "column">
-                    NODE
-                </div>
-                <div class = "column">
-                    REACT
+                    SELECTED PROJECTS
                 </div>
             </div>
     
             <div class = "row" id = "projects-row1">
-                <div class = "column project">
-    
-                </div>
-                <div class = "column project grid-item" id = "hangman-col">
-                    <div id = "hangman-image" style = "position: relative;">
-                        <img src = "assets/images/project-pictures/hangman.png" id = "hangman" width = "300px" height = "175px">
-                        <div  class = "column project-subtitle" id = "hangman-links" style = "position: absolute; top: 5px;">
-                            <p>HANGMAN</p>
-                            <p>javascript</p>
-                            <a href = "https://minori-fh.github.io/Word-Guess-Game/" target = "_blank">SEE SITE</a>
-                            <a href = "https://github.com/minori-fh/Word-Guess-Game" target = "_blank">SEE REPO</a>
-                        </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/images/project-pictures/hangman.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">HANGMAN</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href = "https://minori-fh.github.io/Word-Guess-Game/" target = "_blank"><img src = "assets/images/stack/link.png" width = "20px"></a>
+                        <a href = "https://github.com/minori-fh/Word-Guess-Game" target = "_blank"><img src = "assets/images/stack/github.png" width = "30px"></a>
                     </div>
                 </div>
-                <div class = "column project grid-item" id = "expressflix-col">
-                    <div style = "position: relative;">
-                        <img src = "assets/images/project-pictures/expressflix.png" id = "expressflix" width = "300px" height = "175px">
-                        <div  class = "column project-subtitle" id = "expressflix-links" style = "position: absolute; top: 5px;">
-                            <p>EXPRESSFLIX</p>
-                            <p>javascript+AJAX</p>
-                            <a href = "https://minori-fh.github.io/giftastic/" target = "_blank">SEE SITE</a>
-                            <a href = "https://github.com/minori-fh/giftastic" target = "_blank">SEE REPO</a>
-                        </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/images/project-pictures/expressflix.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">EXPRESSFLIX</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href = "https://minori-fh.github.io/giftastic/" target = "_blank"><img src = "assets/images/stack/link.png" width = "20px"></a>
+                        <a href = "https://github.com/minori-fh/giftastic" target = "_blank"><img src = "assets/images/stack/github.png" width = "30px"></a>
                     </div>
                 </div>
-                <div class = "column project grid-item" id = "polytopia-col">
-                    <div style = "position: relative;">
-                        <img src = "assets/images/project-pictures/polytopia.png" id = "polytopia" width = "300px" height = "175px">
-                        <div  class = "column project-subtitle" id = "polytopia-links" style = "position: absolute; top: 5px;">
-                            <p>POLYTOPIA</p>
-                            <p>javascript</p>
-                            <a href = "https://minori-fh.github.io/unit-4-game/" target = "_blank">SEE SITE</a>
-                            <a href = "https://github.com/minori-fh/unit-4-game" target = "_blank">SEE REPO</a>
-                        </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/images/project-pictures/polytopia.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">POLYTOPIA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href = "https://minori-fh.github.io/unit-4-game/" target = "_blank"><img src = "assets/images/stack/link.png" width = "20px"></a>
+                        <a href = "https://github.com/minori-fh/unit-4-game" target = "_blank"><img src = "assets/images/stack/github.png" width = "30px"></a>
                     </div>
-                </div>
-                <div class = "column project">
-                    
-                </div>
-            </div>
-    
-            <div class = "row" id = "projects-row2">
-                <div class = "column project">
-    
-                </div>
-                <div class = "column project grid-item" id = "sip-col">
-                    <div style = "position: relative;">
-                        <img src = "assets/images/project-pictures/sip.png" id = "sip" width = "300px" height = "175px">
-                        <div  class = "column project-subtitle" id = "sip-links" style = "position: absolute; top: 5px;">
-                            <p>SIP</p>
-                            <p>javascript+Firebase+AJAX</p>
-                            <a href = "https://minori-fh.github.io/Sip/" target = "_blank">SEE SITE</a>
-                            <a href = "https://github.com/minori-fh/Sip" target = "_blank">SEE REPO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class = "column project grid-item" id = "trivia-col">
-                    <div style = "position: relative;">
-                        <img src = "assets/images/project-pictures/trivia.png" id = "trivia" width = "300px" height = "175px">
-                        <div  class = "column project-subtitle" id = "trivia-links" style = "position: absolute; top: 5px;">
-                            <p>TRIVIA</p>
-                            <p>javascript+timers</p>
-                            <a href = "https://minori-fh.github.io/TriviaGame/" target = "_blank">SEE SITE</a>
-                            <a href = "https://github.com/minori-fh/TriviaGame" target = "_blank">SEE REPO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class = "column project grid-item" id = "liri-col">
-                    <div style = "position: relative;">
-                        <img src = "assets/images/project-pictures/liri.png" id = "liri" width = "300px" height = "175px">
-                        <div  class = "column project-subtitle" id = "liri-links" style = "position: absolute; top: 5px;">
-                            <p>LIRI NODE APP</p>
-                            <p>node</p>
-                            <a href = "https://github.com/minori-fh/liri-node-app" target = "_blank">SEE REPO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class = "column project">
-                    
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 <!-- Link to javascript -->
 <script src="assets/javascript/work.js"></script>    

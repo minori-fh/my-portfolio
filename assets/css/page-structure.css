@@ -1,10 +1,16 @@
 #intro-page, #about-me, #work, #about-me2, #work2 { 
     height: 100vh;
-    width: 100vw; 
+    width: 100%; 
+    max-width: 100%; 
     font-family: 'Josefin Sans', sans-serif; 
     color: black;
     box-sizing: border-box; 
     transition: all 0.7s ease-in-out;
+}
+
+body {
+    overflow-x: hidden; 
+    position: relative; 
 }
 
 #intro-page {
@@ -23,6 +29,8 @@
 .row {
     display: flex; 
     flex-direction: row; 
+    margin-left: 0px !important; 
+    margin-right: 0px !important;
 }
 
 .column {
@@ -43,6 +51,7 @@
 /* left and right sections of about me and projects page */
 .left {
     width: 30%; 
+    max-width: 30%; 
     height: 100vh; 
     background-color: white;
     font-size: 50px; 
@@ -50,15 +59,18 @@
     justify-content: center; 
     vertical-align: middle; 
     align-content: center;  
+    overflow-x: hidden; 
 }
 
 .right {
-    width: 70%;
+    width: 70%; 
+    max-width: 70%;
     height: 100vh;  
     background-color: rgb(238, 238, 238); 
     padding-left: 15px; 
     padding-right: 15px; 
     overflow-y: auto; 
+    overflow-x: hidden; 
     margin-left: 30%;
     justify-content: center;  
     position: relative; 
@@ -198,28 +210,11 @@
 
 .tech-label-col {
     justify-content: center;
-    margin-left: 10px
+    /* margin-left: 10px */
 }
 
 #projects-row1 {
-    height: 30%;
     justify-content: space-evenly; 
-}
-
-#projects-row2 {
-    height: 30%; 
-    margin-top: 10px; 
-    justify-content: space-evenly;
-}
-
-.project {
-    width: 300px; 
-    height: 175px; 
-}
-
-.project-subtitle {
-    text-align: center; 
-    width: 100%; 
 }
 
 .stack-row {
