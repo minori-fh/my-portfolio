@@ -21,23 +21,25 @@
 
 <div class = "row">
     <div class = "column left">
-        <div class = "row menu-row">
-            <div class = "column menu-row-col menu-home">
-                <a href = "index.html" ><img src = "assets/images/menu-icons/home.png" class = "go-home" width = "35px"></a> 
+        <div class = "left-menu-content">
+            <div class = "row menu-row">
+                <div class = "column menu-row-col menu-home">
+                    <a href = "index.html" ><img src = "assets/images/menu-icons/home.png" class = "go-home" width = "35px"></a> 
+                </div>
+                <div class = "column home-icon-label">
+                        
+                </div>
             </div>
-            <div class = "column home-icon-label">
-                    
+            <div class = "row menu-row">
+                <div class = "column menu-row-col menu-about">
+                    <a href = "about-me.html" ><img src = "assets/images/menu-icons/aboutme.png" width = "35px"></a> 
+                </div>
+                <div class = "column about-icon-label">
+                        
+                </div>
             </div>
         </div>
-        <div class = "row menu-row">
-            <div class = "column menu-row-col menu-about">
-                <a href = "about-me.html" ><img src = "assets/images/menu-icons/aboutme.png" width = "35px"></a> 
-            </div>
-            <div class = "column about-icon-label">
-                    
-            </div>
-        </div>
-        <div class = "left-main-content">
+
             <div class = "row left-header-row" id = "work-header-row">
                 <p>
                     &lt <span class = "underline-magical">STACK</span><br>
@@ -46,14 +48,13 @@
                 </p>
             </div>
             <div class = "row contact-row">
-                <a href = "https://www.linkedin.com/in/minorifh/" target = "_blank"><img src = "assets/images/contact-icons/linkedinIcon.png" id = "li-icon" width = "40px" opacity = "0.8"></a>
-                <a href = "https://github.com/minori-fh" target = "_blank"><img src = "assets/images/contact-icons/githubIcon.png" id = "gh-icon" width = "40px" opacity = "0.8"></a>
-                <img src = "assets/images/contact-icons/mailIcon.png" class = "mail-icon" width = "40px"  height = "37px" opacity = "0.8">
+                <a href = "https://www.linkedin.com/in/minorifh/" target = "_blank"><img src = "assets/images/contact-icons/linkedinIcon.png" class = "contact-icon" id = "li-icon" width = "40px" opacity = "0.8"></a>
+                <a href = "https://github.com/minori-fh" target = "_blank"><img src = "assets/images/contact-icons/githubIcon.png" class = "contact-icon" id = "gh-icon" width = "40px" opacity = "0.8"></a>
+                <a href = "#"><img src = "assets/images/contact-icons/mailIcon.png" class = "mail-icon contact-icon" width = "37px" height = "37px" opacity = "0.8"></a>
             </div>
             <div class = "row" id = "chat2">
                 Let's chat! E-mail: minori.fh@gmail.com
             </div>
-        </div>
     </div>
 
     <div class = "column right">
@@ -159,14 +160,17 @@
                 </div>
             </div>
         </div>
-        <div class = "row scroll-row-label">
-            <p>projects</p>
-        </div>
-        <div class = "row" id = "scroll-row2">
-            <img src = "assets/images/scrolldown.png" id = "scroll-down2" width = "50px">
+
+        <div class = "scroll-row-content">
+            <div class = "row scroll-row-label">
+                <p>projects</p>
+            </div>
+            <div class = "row" id = "scroll-row2">
+                <img src = "assets/images/scrolldown.png" id = "scroll-down2" width = "50px">
+            </div>
         </div>
     </div>
-</div>
+
 </section>
 
 <section id = "work2">
@@ -195,7 +199,7 @@
                 <div class = "column project">
     
                 </div>
-                <div class = "column project" id = "hangman-col">
+                <div class = "column project grid-item" id = "hangman-col">
                     <div id = "hangman-image" style = "position: relative;">
                         <img src = "assets/images/project-pictures/hangman.png" id = "hangman" width = "300px" height = "175px">
                         <div  class = "column project-subtitle" id = "hangman-links" style = "position: absolute; top: 5px;">
@@ -206,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "column project" id = "expressflix-col">
+                <div class = "column project grid-item" id = "expressflix-col">
                     <div style = "position: relative;">
                         <img src = "assets/images/project-pictures/expressflix.png" id = "expressflix" width = "300px" height = "175px">
                         <div  class = "column project-subtitle" id = "expressflix-links" style = "position: absolute; top: 5px;">
@@ -217,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "column project" id = "polytopia-col">
+                <div class = "column project grid-item" id = "polytopia-col">
                     <div style = "position: relative;">
                         <img src = "assets/images/project-pictures/polytopia.png" id = "polytopia" width = "300px" height = "175px">
                         <div  class = "column project-subtitle" id = "polytopia-links" style = "position: absolute; top: 5px;">
@@ -237,7 +241,7 @@
                 <div class = "column project">
     
                 </div>
-                <div class = "column project" id = "sip-col">
+                <div class = "column project grid-item" id = "sip-col">
                     <div style = "position: relative;">
                         <img src = "assets/images/project-pictures/sip.png" id = "sip" width = "300px" height = "175px">
                         <div  class = "column project-subtitle" id = "sip-links" style = "position: absolute; top: 5px;">
@@ -248,7 +252,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "column project" id = "trivia-col">
+                <div class = "column project grid-item" id = "trivia-col">
                     <div style = "position: relative;">
                         <img src = "assets/images/project-pictures/trivia.png" id = "trivia" width = "300px" height = "175px">
                         <div  class = "column project-subtitle" id = "trivia-links" style = "position: absolute; top: 5px;">
@@ -259,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "column project" id = "liri-col">
+                <div class = "column project grid-item" id = "liri-col">
                     <div style = "position: relative;">
                         <img src = "assets/images/project-pictures/liri.png" id = "liri" width = "300px" height = "175px">
                         <div  class = "column project-subtitle" id = "liri-links" style = "position: absolute; top: 5px;">
@@ -275,6 +279,7 @@
             </div>
         </div>
     </div>
+</div>
 </section>
 <!-- Link to javascript -->
 <script src="assets/javascript/work.js"></script>    
