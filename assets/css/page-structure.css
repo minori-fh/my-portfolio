@@ -255,6 +255,10 @@
     #self-description2{
         font-size: 20px; 
     }
+    /* work media queries */
+    .tech-icon {
+    width: 35px; 
+    }
 }
 
 @media (max-width: 928px){
@@ -282,6 +286,16 @@
     .mail-icon {
         height: 27px; 
         width: 27px; 
+    }
+    /* work media queries */
+    .tech-label-col {
+        font-size: 12px; 
+    }
+    #stack-label-row {
+        font-size: 16px; 
+    }
+    .tech-icon {
+        width: 32px; 
     }
 }
 
@@ -314,6 +328,9 @@
     }
     #stack-label-row {
         font-size: 16px; 
+    }
+    .tech-icon {
+        width: 30px; 
     }
 }
 
@@ -348,6 +365,9 @@
     }
     #stack-label-row {
         font-size: 14px; 
+    }
+    .tech-icon {
+        width: 28px; 
     }
 }
 
