@@ -40,9 +40,9 @@
     width: 60px; 
 }
 
-/* .mail-icon {
+.mail-icon {
     margin-top: 2px; 
-} */
+}
 
 #li-icon, #gh-icon, .mail-icon {
     opacity: 0.5;
@@ -51,6 +51,7 @@
 #chat1, #chat2, #chat3 {
     justify-content: center; 
     font-size: 15px; 
+    text-align: center; 
 }
 
 /* Styling for links */
