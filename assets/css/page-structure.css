@@ -507,7 +507,8 @@ p {
     }
 
     #chat2, #chat3 {
-        font-size: 10px; 
+        font-size: 10px;
+        height: 5%;  
     }
     .tech-icon {
         width: 20px; 

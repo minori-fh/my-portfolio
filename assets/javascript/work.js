@@ -6,7 +6,6 @@ $(document).ready(function() {
 // $("#sip-links").hide()
 // $("#trivia-links").hide()
 // $("#liri-links").hide()
-$("#chat2").hide()
 $("#work2").hide()
 
 // Event handler: mouseover and mouseleave to add rotate class
@@ -32,7 +31,7 @@ $("#scroll-down2").on("click", function(){
 
 //Event handler for when user clicks on mail icon
 $(".mail-icon").on("click", function(){
-    $("#chat2").show()
+    $("#chat2").append("Let's chat minori.fh@gmail.com")
 });
 
 });

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-$("#chat3").hide()
 $("#about-me2").hide()
 
 var codingHrs = 0;
@@ -39,7 +38,7 @@ $("#scroll-down1").on("click", function(){
 
 //Event handler for when user clicks on mail icon
 $(".mail-icon").on("click", function(){
-    $("#chat3").show()
+    $("#chat3").append("Let's chat! E-mail: minori.fh@gmail.com")
 });
 
 $(".menu-home").on("mouseover", function(){
