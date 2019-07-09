@@ -56,7 +56,7 @@ setTimeout(function(){
 }, 4300)
 
 //Animate cube width on mouseover
-$(".cube").on("mouseover",function(){
+$(".cube").on("mouseover touchmove",function(){
     cubeNumber = $(this).attr("cube-value")
     console.log(cubeNumber)
     // console.log(newPage)
@@ -79,7 +79,7 @@ $(".cube").on("mouseover",function(){
 });
 
 //Animate cube width on mouseover
-$("#cube-1").on("mouseover",function(){
+$("#cube-1").on("mouseover touchmove",function(){
     // console.log(cubeNumber)
     // console.log(newPage)
     // console.log(finishLoad)
@@ -96,12 +96,12 @@ $("#cube-1").on("mouseover",function(){
     }
 });
 
-$("#cube-1").on("mouseleave",function(){
+$("#cube-1").on("mouseleave touchend",function(){
     $("#about-me-link").hide()
 })
 
 //Animate cube width on mouseover
-$("#cube-2").on("mouseover",function(){
+$("#cube-2").on("mouseover touchmove",function(){
     // console.log(cubeNumber)
     // console.log(newPage)
     // console.log(finishLoad)
@@ -118,20 +118,20 @@ $("#cube-2").on("mouseover",function(){
     }
 });
 
-$("#cube-2").on("mouseleave",function(){
+$("#cube-2").on("mouseleave touchend",function(){
     $("#work-link").hide()
 })
 
-$("#cube-0").on("mouseleave",function(){
+$("#cube-0").on("mouseleave touchend",function(){
     $("#scroll-arrow1").hide()
 })
 
-$("#cube-3").on("mouseleave",function(){
+$("#cube-3").on("mouseleave touchend",function(){
     $("#scroll-arrow2").hide()
 })
 
 
-$("#cubez").on("mouseleave", function(){
+$("#cubez").on("mouseleave touchend", function(){
     console.log("mouse left!")
     console.log(newPage)
     $("#about-me-link").hide()
@@ -157,7 +157,7 @@ $("#cubez").on("mouseleave", function(){
 
 
 //Animate text on cube-0 scroll arrow
-$("#cube-0").on("mouseenter", function(){
+$("#cube-0").on("mouseenter touchmove", function(){
     if (finishLoad != 0){
         setTimeout(function(){
             $("#scroll-arrow1").show()
@@ -193,7 +193,7 @@ $("#cube-0").on("mouseenter", function(){
 });
 
 //Animate text on cube-1 ABOUT ME
-$("#cube-1").on("mouseenter", function(){
+$("#cube-1").on("mouseenter touchmove", function(){
     if (finishLoad != 0){
         $("#about-me-link").show()
     }
@@ -228,7 +228,7 @@ $("#cube-1").on("mouseenter", function(){
 
 
 //Animate text on cube-2 WORK
-$("#cube-2").on("mouseenter", function(){
+$("#cube-2").on("mouseenter touchmove", function(){
     $("#work-link").show()
 
     if (finishLoad != 0){
@@ -263,7 +263,7 @@ $("#cube-2").on("mouseenter", function(){
 });
 
 //Animate text on cube-3 scroll arrow
-$("#cube-3").on("mouseenter", function(){
+$("#cube-3").on("mouseenter touchmove", function(){
     if (finishLoad != 0){
         setTimeout(function(){
             $("#scroll-arrow2").show()
