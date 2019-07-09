@@ -40,11 +40,11 @@
     width: 60px; 
 }
 
-.mail-icon {
+.mail-icon, .mail-icon-index {
     margin-top: 2px; 
 }
 
-#li-icon, #gh-icon, .mail-icon {
+#li-icon, #gh-icon, .mail-icon, .mail-icon-index {
     opacity: 0.5;
 }
 

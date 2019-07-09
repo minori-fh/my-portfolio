@@ -358,7 +358,7 @@ $("#work-link").on("click", function(){
 });
 
 //Event handler for when user clicks on mail icon
-$(".mail-icon").on("click", function(){
+$(".mail-icon-index").on("click", function(){
     $("#chat1").show()
 });
 
