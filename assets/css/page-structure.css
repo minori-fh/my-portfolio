@@ -443,6 +443,10 @@ p {
         display: initial;
     }
 
+    .cube {
+        display: flex; 
+    }
+
     .right2 {
         margin-top: 0px; 
         padding-top: 30vh; 
