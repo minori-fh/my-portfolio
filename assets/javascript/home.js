@@ -299,7 +299,7 @@ $("#cube-3").on("mouseenter", function(){
 });
 
 //Event handler on click (about me or work page)
-$("#about-me-link").on("touchstart click", function(){
+$("#about-me-link").on("click touchstart", function(){
     $("#work-link").empty()
     $("#about-me-link").empty()
     $("#scroll-arrow1, #scroll-arrow2").empty()
@@ -329,7 +329,7 @@ $("#about-me-link").on("touchstart click", function(){
 });
 
 //Event handler on click (about me or work page)
-$("#work-link").on("touchstart click", function(){
+$("#work-link").on("click touchstart", function(){
     $("#about-me-link").empty()
     $("#work-link").empty()
     $("#scroll-arrow1, #scroll-arrow2").empty()
