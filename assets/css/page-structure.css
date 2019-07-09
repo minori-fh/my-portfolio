@@ -487,6 +487,11 @@ p {
         font-size: 10px;
         height: 5%;  
     }
+
+    #chat1 {
+        margin-top: -10%; 
+    }
+    
     .tech-icon {
         width: 20px; 
     }
