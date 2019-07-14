@@ -456,7 +456,14 @@ p {
         margin-top: 30vh; 
         overflow: scroll;
         text-align: center; 
-        padding-top: 10%;
+    }
+
+    #stack-label-row {
+        margin-top: 8%; 
+    }
+
+    #self-description1 {
+        margin-top: 20%; 
     }
 
     .column {
