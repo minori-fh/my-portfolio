@@ -466,6 +466,10 @@ p {
         margin-top: 20%; 
     }
 
+    #self-description2 {
+        margin-top: 10%; 
+    }
+
     .column {
         display: initial;
     }
