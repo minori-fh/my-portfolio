@@ -418,6 +418,26 @@ p {
         font-size: 10px; 
     }
 }
+
+@media (max-width: 600px){
+#cubez {
+    display: none; 
+}
+
+#myName-column{
+    display: none; 
+}
+
+#cube-replace {
+    display: unset !important;
+    text-align: center; 
+    font-size: 30px; 
+    margin-top: 30%; 
+}
+
+#contact-row-index {
+    margin-top: 10% !important; 
+}
 @media (max-width: 530px){
     .left {
         flex-direction: row; 

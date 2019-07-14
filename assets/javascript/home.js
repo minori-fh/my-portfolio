@@ -7,6 +7,7 @@ $("#scroll-arrow2").hide()
 $("#background-image1").hide()
 $("#background-image2").hide()
 $("#chat1").hide()
+$("#cube-replace").hide();
 
 //Variable declarations
 var cubeNumber = "";
@@ -299,7 +300,7 @@ $("#cube-3").on("mouseenter touchmove", function(){
 });
 
 //Event handler on click (about me or work page)
-$("#about-me-link").on("click touchstart", function(){
+$("#about-me-link, #aboutme-replace").on("click touchstart", function(){
     $("#work-link").empty()
     $("#about-me-link").empty()
     $("#scroll-arrow1, #scroll-arrow2").empty()
@@ -329,7 +330,7 @@ $("#about-me-link").on("click touchstart", function(){
 });
 
 //Event handler on click (about me or work page)
-$("#work-link").on("click touchstart", function(){
+$("#work-link, #work-replace").on("click touchstart", function(){
     $("#about-me-link").empty()
     $("#work-link").empty()
     $("#scroll-arrow1, #scroll-arrow2").empty()
