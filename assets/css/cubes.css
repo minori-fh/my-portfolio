@@ -10,6 +10,10 @@
     width: 100vh - 150px; 
 }
 
+.cube {
+    cursor: default; 
+}
+
 #cube-0 {
     background-color: #000000;
     flex: initial; 
