@@ -89,7 +89,8 @@ p {
 #right-work {
     width: 70%; 
     max-width: 70%;
-    height: auto; 
+    height: auto;
+    min-height: 100vh;  
     background-color: rgb(238, 238, 238); 
     padding-left: 15px; 
     padding-right: 15px; 
