@@ -38,7 +38,7 @@ $("#scroll-down1").on("click", function(){
 
 //Event handler for when user clicks on mail icon
 $(".mail-icon").on("click", function(){
-    $("#chat3").append("Let's chat! E-mail: minori.fh@gmail.com")
+    $("#chat3").html("<p> Let's chat minori.fh@gmail.com </p>")
 });
 
 $(".menu-home").on("mouseover", function(){
