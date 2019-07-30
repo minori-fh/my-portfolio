@@ -5,14 +5,14 @@ var codingHrs = 0;
 var coffeeCups = 0;
 
 function typeCoder(){
-    if (codingHrs < 400){
+    if (codingHrs < 800){
         codingHrs++
         $("#coding-hrs").text("  " + codingHrs + " hrs.")
     }
 };
 
 function typeCoffee(){
-    if (coffeeCups < 100){
+    if (coffeeCups < 91){
         coffeeCups++
         $("#coffee-cups").text("  " + coffeeCups + " cups")
     }
