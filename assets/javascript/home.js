@@ -4,6 +4,7 @@ $("#about-me-link").hide()
 $("#work-link").hide()
 $("#scroll-arrow1").hide()
 $("#scroll-arrow2").hide()
+$("#scroll-arrow").hide()
 $("#background-image1").hide()
 $("#background-image2").hide()
 $("#chat1").hide()
@@ -55,6 +56,36 @@ setTimeout(function(){
     $("#cube-3").animate({height: "300px", top: -70, bottom: -200}, 1200);
     finishLoad = 1;
 }, 4300)
+
+setTimeout(function(){
+    $("#scroll-arrow").show()
+
+    $('#scroll-arrow').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+    
+    anime.timeline({loop: true})
+        .add({
+        targets: '#scroll-arrow .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: function(el, i) {
+            return 500 + 30 * i;
+        }
+        }).add({
+        targets: '#scroll-arrow .letter',
+        translateX: [0,-30],
+        opacity: [1,0],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: function(el, i) {
+            return 100 + 30 * i;
+        }
+        });
+}, 4300);
 
 //Animate cube width on mouseover
 $(".cube").on("mouseover touchmove",function(){

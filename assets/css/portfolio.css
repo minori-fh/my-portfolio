@@ -27,6 +27,11 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+#scroll-arrow-row{
+    justify-content: center;
+    margin-top: -2%;  
+}
+
 .main-text-row {
     font-family: 'Roboto Slab', serif;
 }
