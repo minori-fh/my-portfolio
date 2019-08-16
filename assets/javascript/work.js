@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-// $("#hangman-links").hide()
-// $("#expressflix-links").hide()
-// $("#polytopia-links").hide()
-// $("#sip-links").hide()
-// $("#trivia-links").hide()
-// $("#liri-links").hide()
 $("#work2").hide()
 
 // Event handler: mouseover and mouseleave to add rotate class
